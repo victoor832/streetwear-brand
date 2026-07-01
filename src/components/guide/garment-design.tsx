@@ -127,75 +127,82 @@ const modules: Module[] = [
   {
     num: "M6",
     level: "Nivel 55",
-    title: "Diseño digital en PC: Adobe Illustrator y Affinity",
+    title: "Diseño digital en Mac: Inkscape, GIMP y Adobe Express (todo gratuito)",
     duration: "2 semanas",
     intro:
-      "Hasta aquí has trabajado a mano. Ahora toca profesionalizar: dibujar flats y tech packs en software vectorial. Adobe Illustrator es el estándar de la industria. Affinity Designer es la alternativa de pago único. Inkscape es la opción gratuita. Cualquiera de los tres te sirve, pero Illustrator abre más puertas.",
+      "Hasta aquí has trabajado a mano. Ahora toca profesionalizar: dibujar flats y tech packs en software digital. Todo el software de este módulo es gratuito y nativo para macOS en Apple Silicon (M1 a M4). No necesitas pagar suscripciones de Adobe para diseñar prendas profesionales.",
     body: [
-      "Por qué vectorial y no píxeles. Un flat sketch debe escalarse sin perder calidad: lo dibujas una vez y lo usas en el tech pack, en el lookbook, en Instagram, en un cartel. Los gráficos vectoriales se componen de trayectorias matemáticas, no de píxeles, así que escalan infinitamente. Illustrator, Affinity e Inkscape son editores vectoriales. Photoshop y Krita son de píxeles: útiles para fotos y texturas, NO para flats.",
-      "Flujo de trabajo típico en Illustrator para fashion. 1) Importas tu boceto a mano como referencia (capa bloqueada con opacidad al 30%). 2) Sobre ella, dibujas con la herramienta Pluma (P) los contornos planos. 3) Añades las costuras con la herramienta Trazo punteado. 4) Etiquetas todas las medidas. 5) Exportas en AI, PDF y SVG. El resultado es un flat digital limpio que cualquier fabricante entiende.",
-      "Herramientas concretas que aprender primero en Illustrator. Pluma (P) para trazar. Selección directa (A) para ajustar puntos. Trazo para definir grosor y tipo de línea (continua para contornos, punteada para costuras). Símbolos para elementos repetibles (botones, ojales). Capas para separar flat frontal, posterior y detalles. Mascaras de recorte para aplicar texturas. Con estas 6 herramientas haces el 90% del trabajo.",
-      "Coste y alternativas. Illustrator es suscripción: aprox. 24€/mes con prueba de 7 días. Affinity Designer es pago único: aprox. 70€ para siempre, sin suscripción. Inkscape es gratuito y open source: hace el 80% del trabajo de Illustrator con menor pulido. Si tu presupuesto es cero, empieza con Inkscape. Si tienes 70€, ve a Affinity. Si puedes asumir 24€/mes, Illustrator es lo que usan todos los profesionales.",
+      "Por qué vectorial y no píxeles. Un flat sketch debe escalarse sin perder calidad: lo dibujas una vez y lo usas en el tech pack, en el lookbook, en Instagram, en un cartel. Los gráficos vectoriales se componen de trayectorias matemáticas, no de píxeles, así que escalan infinitamente. Inkscape es el editor vectorial gratuito líder en macOS Apple Silicon. GIMP y Photopea son de píxeles: útiles para fotos y texturas, NO para flats.",
+      "Inkscape en macOS Apple Silicon (M4). Inkscape es 100% gratuito y de código abierto. La versión actual (1.3+) es nativa para Apple Silicon, así que corre sin Rosetta y aprovecha toda la potencia del M4. Lo descargas desde inkscape.org (archivo DMG, instalación drag-and-drop como cualquier app de Mac). Flujo de trabajo típico: 1) Importas tu boceto a mano como referencia (capa bloqueada con opacidad al 30%). 2) Sobre ella, dibujas con la herramienta Pluma (B) los contornos planos. 3) Añades las costuras con trazo punteado. 4) Etiquetas todas las medidas. 5) Exportas en SVG, PDF y PNG. El resultado es un flat digital limpio que cualquier fabricante entiende.",
+      "Adobe Express: la herramienta web gratuita de Adobe. Adobe Express (express.adobe.com) es la alternativa gratuita de Adobe a Canva. Funciona en el navegador, no requiere instalación y se usa con cuenta Adobe ID gratuita. Permite crear mockups, posts para redes sociales, miniaturas y presentaciones. Incluye plantillas profesionales y acceso limitado a Adobe Fonts y Adobe Stock gratis. NO sustituye a Inkscape para flats, pero complementa para todo lo visual y de marketing.",
+      "GIMP y Photopea para edición de imágenes. GIMP es el equivalente gratuito de Photoshop, nativo para macOS Apple Silicon (descarga desde gimp.org, archivo DMG). Lo usas para editar fotos de producto, aplicar texturas a tus flats y retocar mockups. Photopea (photopea.com) es una alternativa web que abre y guarda archivos PSD de Photoshop sin instalar nada. Para tu primer drop, con Inkscape + GIMP + Adobe Express tienes cubierto el 100% del trabajo digital de diseño. Cero euros en software.",
     ],
     practical: {
-      title: "Dibuja tu primer flat digital en Illustrator",
+      title: "Dibuja tu primer flat digital en Inkscape",
       description:
-        "Elige la prenda más sencilla de tu colección (probablemente la tee). Imprime tu boceto a mano. En Illustrator, importa la foto del boceto. Bloquéala en una capa con opacidad al 30%. Crea capa nueva encima. Con la Pluma, dibuja el contorno plano. Añade costuras con trazo punteado. Etiqueta medidas. Exporta en PDF. Compáralo con tu flat a mano: la diferencia será obvia.",
+        "Elige la prenda más sencilla de tu colección (probablemente la tee). Imprime tu boceto a mano o hazle una foto con el móvil. En Inkscape, importa la imagen como referencia. Bloquéala en una capa con opacidad al 30%. Crea capa nueva encima. Con la Pluma (B), dibuja el contorno plano. Añade costuras con trazo punteado. Etiqueta medidas. Exporta en PDF y SVG. Compáralo con tu flat a mano: la diferencia será obvia.",
     },
     resources: [
-      { label: "Adobe Illustrator (trial 7 días)", url: "https://www.adobe.com/es/products/illustrator.html" },
-      { label: "Affinity Designer (pago único)", url: "https://affinity.serif.com/es/designer/" },
-      { label: "Inkscape (gratis)", url: "https://inkscape.org" },
-      { label: "Tutoriales Illustrator for Fashion en YouTube", url: "https://www.youtube.com/results?search_query=illustrator+fashion+design+tutorial" },
+      { label: "Inkscape (gratis, nativo Mac M4)", url: "https://inkscape.org" },
+      { label: "GIMP (gratis, nativo Mac M4)", url: "https://www.gimp.org" },
+      { label: "Adobe Express (web, gratis)", url: "https://express.adobe.com" },
+      { label: "Photopea (web, gratis)", url: "https://www.photopea.com" },
+      { label: "Tutoriales Inkscape oficiales en YouTube", url: "https://www.youtube.com/results?search_query=inkscape+tutorial+espa%C3%B1ol" },
     ],
   },
   {
     num: "M7",
     level: "Nivel 65",
-    title: "CLO 3D y simulación de prendas: la revolución del diseño digital",
+    title: "Diseño 3D en Mac: CLO 3D (estudiante gratis) y Blender (100% gratis)",
     duration: "3 a 4 semanas",
     intro:
-      "CLO 3D es el software más revolucionario del diseño de moda en la última década. Permite simular una prenda en 3D, ver cómo cae el tejido, ajustar el patrón en tiempo real y renderizar imágenes fotorrealistas sin coser una sola pieza. Las grandes marcas ya lo usan. Aprenderlo te diferencia radicalmente.",
+      "El software 3D es la revolución del diseño de moda en la última década. Permite simular una prenda en 3D, ver cómo cae el tejido, ajustar el patrón en tiempo real y renderizar imágenes fotorrealistas sin coser una sola pieza. En macOS Apple Silicon (M4) tienes dos opciones potentes: CLO 3D (gratis con licencia de estudiante) y Blender (100% gratuito y libre).",
     body: [
-      "Qué hace CLO 3D. Importas un patrón 2D (el que hiciste en M5 o que te dio un patronista). CLO lo cose virtualmente sobre un avatar 3D. Aplicas un tejido de su biblioteca (algodón pesado, ripstop, softshell). El software simula cómo cae y se mueve la prenda sobre el cuerpo. Puedes cambiar el tejido, el color o el ajuste en segundos. Renderizas una imagen que parece una foto real. Todo sin producir nada físico.",
-      "Por qué es revolucionario para una marca pequeña. Tradicionalmente, una marca pequeña necesitaba 3 rondas de muestras físicas (200 a 400€ por ronda) para afinar una prenda. Con CLO 3D, las 3 rondas se hacen virtualmente. Solo pides 1 muestra física al final, cuando el diseño está pulido. Ahorro: 400 a 800€ por prenda. Para una colección de 5 prendas, son 2.000 a 4.000€ ahorrados.",
-      "Coste y accesibilidad. CLO 3D tiene varias opciones. Trial gratuito de 30 días (ideal para hacer tu colección entera sin pagar). Licencia de estudiante con descuento (necesitas email .edu o documentación). Licencia profesional: aprox. 50€/mes o 500€/año (cara pero rentable si te ahorra muestras). Para tu primer drop, el trial de 30 días es suficiente si te organizas.",
-      "Cómo empezar sin abrumarte. NO intentes aprender CLO 3D en 1 semana. El software es complejo. Plan realista: semana 1, mira el tutorial oficial de CLO 3D en YouTube y haz su proyecto de muestra (camiseta básica). Semana 2, importa tu primer patrón real (la tee de tu colección). Semana 3, intenta un hoodie (más complejo). Semana 4, renderiza y exporta imágenes para tu lookbook. Si lo haces bien, en 4 semanas tienes tu primera colección virtual.",
+      "CLO 3D en Mac Apple Silicon. CLO 3D es compatible con macOS en Apple Silicon (M1 a M4). Su página oficial confirma compatibilidad nativa. Lo que hace: importas un patrón 2D (el que hiciste en M5 o que te dio un patronista). CLO lo cose virtualmente sobre un avatar 3D. Aplicas un tejido de su biblioteca (algodón pesado, ripstop, softshell). El software simula cómo cae y se mueve la prenda sobre el cuerpo. Puedes cambiar el tejido, el color o el ajuste en segundos. Renderizas una imagen que parece una foto real. Todo sin producir nada físico.",
+      "Cómo conseguir CLO 3D gratis. Hay 3 vías. Trial gratuito de 30 días (ideal para hacer tu colección entera sin pagar). Licencia de estudiante gratuita: CLO ofrece licencia gratuita para estudiantes verificados (necesitas email .edu de tu universidad o documentación académica). Licencia profesional: aprox. 50€/mes o 500€/año (cara pero rentable si te ahorra muestras). Para tu primer drop, el trial de 30 días es suficiente si te organizas. Si eres estudiante, la licencia gratuita es la opción perfecta.",
+      "Blender como alternativa 100% gratuita y libre. Si no puedes acceder a CLO 3D gratis, Blender es la alternativa. Es 100% gratuito, de código abierto y nativo para macOS Apple Silicon (descarga desde blender.org, DMG para Mac). Blender NO está diseñado específicamente para moda, pero su motor de simulación de telas (Cloth Simulator) es potente y gratuito. Hay tutoriales en YouTube específicos sobre cómo usar Blender para diseño de moda 3D. La curva de aprendizaje es mayor que CLO 3D, pero el coste es cero para siempre.",
+      "Por qué es revolucionario para una marca pequeña. Tradicionalmente, una marca pequeña necesitaba 3 rondas de muestras físicas (200 a 400€ por ronda) para afinar una prenda. Con CLO 3D o Blender, las 3 rondas se hacen virtualmente. Solo pides 1 muestra física al final, cuando el diseño está pulido. Ahorro: 400 a 800€ por prenda. Para una colección de 5 prendas, son 2.000 a 4.000€ ahorrados. Y con la potencia del M4, los renders son rápidos: lo que en un PC antiguo tardaba 30 minutos, en un MacBook Air M4 tarda 3 a 5 minutos.",
+      "Cómo empezar sin abrumarte. NO intentes aprender CLO 3D o Blender en 1 semana. Ambos softwares son complejos. Plan realista con CLO 3D: semana 1, mira el tutorial oficial de CLO 3D en YouTube y haz su proyecto de muestra (camiseta básica). Semana 2, importa tu primer patrón real (la tee de tu colección). Semana 3, intenta un hoodie (más complejo). Semana 4, renderiza y exporta imágenes para tu lookbook. Si lo haces bien, en 4 semanas tienes tu primera colección virtual.",
     ],
     practical: {
-      title: "Tu primera prenda en CLO 3D",
+      title: "Tu primera prenda en CLO 3D o Blender",
       description:
-        "Tras ver los tutoriales oficiales, coge el patrón de la camiseta de tu colección (puedes usar uno gratuito de la biblioteca de CLO). En 1 sesión de 4 horas, deberías tenerla cosida virtualmente, con tejido aplicado y un render básico. NO esperes perfección. El objetivo es entender el flujo: importar patrón, coser, aplicar tejido, renderizar. La perfección viene después.",
+        "Tras ver los tutoriales oficiales, coge el patrón de la camiseta de tu colección (puedes usar uno gratuito de la biblioteca de CLO o buscar 'Blender cloth simulation t-shirt' en YouTube). En 1 sesión de 4 horas, deberías tenerla cosida virtualmente, con tejido aplicado y un render básico. NO esperes perfección. El objetivo es entender el flujo: importar patrón, coser, aplicar tejido, renderizar. La perfección viene después.",
     },
     resources: [
-      { label: "CLO 3D (trial 30 días)", url: "https://www.clo3d.com" },
+      { label: "CLO 3D (trial 30 días + estudiante gratis)", url: "https://www.clo3d.com" },
+      { label: "Blender (100% gratis, nativo Mac M4)", url: "https://www.blender.org" },
       { label: "Canal oficial CLO 3D en YouTube", url: "https://www.youtube.com/@CLO3D" },
       { label: "Zoe Hong playlist CLO 3D", url: "https://www.youtube.com/playlist?search=CLO+3D+zoehong" },
+      { label: "Tutoriales Blender cloth en YouTube", url: "https://www.youtube.com/results?search_query=blender+cloth+simulation+fashion" },
       { label: "Coursera: 3D Fashion Design with CLO (audit gratis)", url: "https://www.coursera.org/learn/3d-fashion-design" },
     ],
   },
   {
     num: "M8",
     level: "Nivel 75",
-    title: "Procreate y Krita: ilustración digital a mano",
+    title: "Ilustración digital a mano en Mac: Krita y Adobe Fresco (gratis)",
     duration: "1 a 2 semanas (opcional)",
     intro:
-      "Si tu flujo de trabajo es más artístico que técnico, Procreate (en iPad) o Krita (en PC) son las herramientas ideales para ilustrar moda digitalmente a mano. No sustituyen a Illustrator (para flats) ni a CLO 3D (para simulación), pero son perfectas para croquis, presentaciones y moodboards digitales.",
+      "Si tu flujo de trabajo es más artístico que técnico, la ilustración digital a mano es la herramienta ideal para croquis, presentaciones y moodboards digitales. En macOS Apple Silicon tienes dos opciones gratuitas: Krita (100% gratis, nativo Mac) y Adobe Fresco (gratis con cuenta Adobe). Procreate NO existe para Mac (solo iPad), así que se menciona como alternativa condicional.",
     body: [
-      "Procreate en iPad. App de pago único (13€) que convierte tu iPad en un cuaderno de bocetos infinito. Pinceles que imitan acuarela, rotulador, lápiz, óleo. Capas. Exportación a PSD, PNG, PDF. Si tienes iPad y Apple Pencil, es la herramienta más fluida para ilustración de moda digital. La curva de aprendizaje es muy baja: en 2 horas estás dibujando croquis presentables.",
-      "Krita en PC. Software libre y gratuito. Alternativa a Procreate para PC. Si tienes tableta gráfica Wacom o similar, Krita te da pinceles profesionales sin coste. Curva de aprendizaje media: más complejo que Procreate pero más potente. Recomendado si no tienes iPad pero sí tableta gráfica.",
-      "Cuándo usar ilustración digital vs CLO 3D vs Illustrator. Ilustración digital (Procreate/Krita): para croquis, presentaciones artísticas, lookbook. Illustrator: para flats y tech packs técnicos. CLO 3D: para simulación fotorrealista y validación de patronaje. Los 3 se complementan, no se excluyen. Una marca profesional usa los 3 según la fase.",
-      "Flujo recomendado para tu primer drop. 1) Bocetos a mano en libreta (M2). 2) Croquis digitales en Procreate/Krita para lookbook y redes sociales (M8). 3) Flats técnicos en Illustrator para tech packs (M6). 4) Simulación en CLO 3D para validar patronaje antes de pedir muestra física (M7). 5) Muestra física y producción. Este flujo te ahorra tiempo y dinero en cada paso.",
+      "Krita en Mac Apple Silicon (M4). Krita es 100% gratuito, de código abierto y nativo para macOS Apple Silicon. Lo descargas desde krita.org (archivo DMG). Pinceles que imitan acuarela, rotulador, lápiz, óleo. Capas. Exportación a PSD, PNG, PDF. Si tienes tableta gráfica Wacom o similar conectada por USB a tu Mac, Krita te da pinceles profesionales sin coste. Curva de aprendizaje media: más complejo que Procreate pero más potente. Recomendado para ilustración de moda en Mac.",
+      "Adobe Fresco en Mac. Adobe Fresco es la app de ilustración de Adobe, disponible para Mac, iPad y iPhone. La versión gratuita incluye la mayoría de pinceles vectoriales y de píxeles, con limite de uso mensual. Funciona con cuenta Adobe ID gratuita. Descarga desde la web de Adobe o desde la Mac App Store. Fresco es más fluido que Krita para croquis rápidos, pero la versión gratuita tiene límites. Si ilustras mucho, valora pagar la versión completa (10,99€/mes). Para empezar, Krita cubre el 100% del trabajo sin coste.",
+      "Procreate: la aclaración importante. Procreate NO existe para Mac. Es exclusivo de iPad (13€ pago único). Si tienes un iPad y Apple Pencil, Procreate es la herramienta más fluida para ilustración de moda digital. Pero si trabajas solo en Mac, no puedes usar Procreate. Krita + Adobe Fresco son tus alternativas. Esto es importante porque muchos tutoriales en YouTube asumen que tienes iPad.",
+      "Cuándo usar ilustración digital vs CLO 3D vs Inkscape. Ilustración digital (Krita o Fresco): para croquis, presentaciones artísticas, lookbook. Inkscape: para flats y tech packs técnicos (vectorial). CLO 3D o Blender: para simulación fotorrealista y validación de patronaje. Los 3 se complementan, no se excluyen. Una marca profesional usa los 3 según la fase.",
+      "Flujo recomendado en Mac para tu primer drop. 1) Bocetos a mano en libreta (M2). 2) Croquis digitales en Krita o Fresco para lookbook y redes sociales (M8). 3) Flats técnicos en Inkscape para tech packs (M6). 4) Simulación en CLO 3D o Blender para validar patronaje antes de pedir muestra física (M7). 5) Muestra física y producción. Todo el software es gratuito o tiene versión gratuita suficiente. Cero euros en software si usas Krita + Inkscape + GIMP + Blender + Adobe Express + Adobe Fresco (gratis).",
     ],
     practical: {
       title: "Croquis digital de tu colección completa",
       description:
-        "Si tienes Procreate (iPad) o Krita (PC), dibuja los 5 croquis de tu colección en digital. Usa una plantilla de croquis como base (las hay gratuitas en Pinterest). Aplica los colores de tu paleta. Exporta en PNG con fondo transparente. Estos 5 croquis serán la columna visual de tu lookbook y de tu Instagram durante las 4 semanas previas al drop.",
+        "Si tienes Mac y tableta gráfica (Wacom Intuos S vale 60€), descarga Krita gratis. Dibuja los 5 croquis de tu colección en digital. Usa una plantilla de croquis como base (las hay gratuitas en Pinterest). Aplica los colores de tu paleta. Exporta en PNG con fondo transparente. Estos 5 croquis serán la columna visual de tu lookbook y de tu Instagram durante las 4 semanas previas al drop.",
     },
     resources: [
-      { label: "Procreate (iPad)", url: "https://procreate.com" },
-      { label: "Krita (PC, gratis)", url: "https://krita.org" },
-      { label: "Tutoriales Procreate Fashion en YouTube", url: "https://www.youtube.com/results?search_query=procreate+fashion+illustration" },
+      { label: "Krita (gratis, nativo Mac M4)", url: "https://krita.org" },
+      { label: "Adobe Fresco (gratis con cuenta Adobe)", url: "https://www.adobe.com/es/products/fresco.html" },
+      { label: "Procreate (solo iPad, 13€)", url: "https://procreate.com" },
+      { label: "Tutoriales Krita en YouTube", url: "https://www.youtube.com/results?search_query=krita+tutorial+digital+art" },
+      { label: "Tutoriales Adobe Fresco oficiales", url: "https://www.youtube.com/results?search_query=adobe+fresco+tutorial" },
       { label: "Pinterest: croquis templates", url: "https://www.pinterest.com/search/pins/?q=fashion%20croquis%20template" },
     ],
   },
@@ -230,14 +237,14 @@ const modules: Module[] = [
     intro:
       "Nunca pidas una muestra física sin haberla visto antes en mockup. El mockup es tu ensayo gratis. La muestra física es tu ensayo de 40€. Salta del boceto a la muestra física y perderás dinero.",
     body: [
-      "Hay 3 tipos de mockup. Mockup digital sobre plantilla: subes tu diseño a un servicio como Placeit o Smartmockups y obtienes una imagen realista en una prenda. Útil para redes sociales y validación con audiencia. Mockup digital sobre foto propia: tomas foto a una prenda real tuya y aplicas el diseño en Photopea/Figma. Más auténtico pero más trabajo.",
+      "Hay 3 tipos de mockup. Mockup digital sobre plantilla: subes tu diseño a un servicio como Placeit o Smartmockups y obtienes una imagen realista en una prenda. Útil para redes sociales y validación con audiencia. Mockup digital sobre foto propia: tomas foto a una prenda real tuya y aplicas el diseño en GIMP, Photopea o Adobe Express (todas gratuitas en Mac). Más auténtico pero más trabajo.",
       "Prototipo en papel: imprimes tu diseño en papel y lo pegas a una prenda real. Cuelgas la prenda y la fotografiás. Suena primitivo pero te da información sobre escala y ubicación que el mockup digital no te da. Útil para logos grandes en espalda.",
       "Muestra física (sample): solo cuando has validado los 2 anteriores. Cuesta 15 a 40€ por pieza. Tardan 2 a 4 semanas en llegar. Pídela en talla M (la más vendida en streetwear). Si llega mal, pides 1 revisión. Si llega bien, pides producción. Si pides más de 2 revisiones sin mejorar, el problema es tu tech pack, no el fabricante.",
     ],
     practical: {
       title: "Mockup coherente de las 5 prendas",
       description:
-        "Antes de pedir ninguna muestra física, haz mockup digital de las 5 prendas de tu colección. Colócalas juntas en un solo documento (Figma). Míralas en conjunto. ¿Parecen una colección o 5 prendas sueltas? Si no parecen colección, vuelve a bocetar antes de avanzar.",
+        "Antes de pedir ninguna muestra física, haz mockup digital de las 5 prendas de tu colección. Colócalas juntas en un solo documento (Adobe Express, Figma o Inkscape, todos gratuitos en Mac). Míralas en conjunto. ¿Parecen una colección o 5 prendas sueltas? Si no parecen colección, vuelve a bocetar antes de avanzar.",
     },
     resources: [
       { label: "Placeit (mockups)", url: "https://placeit.net" },
@@ -490,16 +497,17 @@ export function GarmentDesign() {
         <div className="mt-16 border-t border-border pt-12">
           <div className="space-y-3 max-w-2xl mb-8">
             <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
-              Cursos para diseño digital en PC
+              Cursos para diseño digital en Mac (software gratuito)
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold tracking-tight leading-tight">
-              Aprende CLO 3D, Illustrator y Procreate con cursos reales.
+              Aprende Inkscape, Blender, Krita y Adobe gratuito con cursos reales.
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Estos cursos cubren las 3 herramientas clave del diseño digital de moda: CLO 3D
-              (simulación 3D), Adobe Illustrator (flats y tech packs) y Procreate (ilustración
-              en iPad). Hay opciones gratuitas (Coursera audit y playlists de YouTube) y de pago
-              (Udemy y Domestika). Elige 1 o 2 según el software que vayas a usar.
+              Estos cursos cubren las herramientas clave del diseño digital de moda en macOS
+              Apple Silicon: Inkscape (vectorial gratis), Blender (3D gratis), Krita
+              (ilustración gratis), Adobe Express (web gratis), Adobe Fresco (ilustración
+              gratis) y CLO 3D (trial y estudiante gratis). TODOS son gratuitos o tienen
+              versión gratuita suficiente. Cero euros en software para tu MacBook Air M4.
             </p>
           </div>
 
@@ -550,14 +558,14 @@ export function GarmentDesign() {
           {/* Honest note */}
           <div className="mt-6 border border-dashed border-border p-5 sm:p-6 bg-background">
             <h4 className="font-mono text-xs uppercase tracking-widest text-foreground mb-2">
-              Sobre el orden recomendado
+              Sobre el orden recomendado para Mac
             </h4>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Si solo puedes elegir 1 curso, empieza por el de CLO 3D (Coursera, gratis). Es el
-              que más impacto tendrá en tu capacidad de diseñar prendas profesionales sin
-              gastar en muestras físicas. Si te queda presupuesto, el de Illustrator en Udemy
-              (13,99€) es el complemento perfecto para flats y tech packs. El de Procreate solo
-              si ya tienes iPad y Apple Pencil.
+              Si solo puedes elegir 2 cursos, empieza por el de Adobe Express (web gratis, para
+              mockups y redes) y el de Inkscape (vectorial gratis, para flats y tech packs). Si
+              quieres diseño 3D, añade CLO 3D (trial 30 días) o Blender (100% gratis para
+              siempre). Todos funcionan nativamente en MacBook Air M4 sin Rosetta 2. Total
+              gastado en software de diseño: 0€.
             </p>
           </div>
         </div>

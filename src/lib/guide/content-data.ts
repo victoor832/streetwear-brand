@@ -102,54 +102,98 @@ export const garmentDesignCourses: Course[] = [
 ];
 
 /**
- * Digital PC design courses (specifically for fashion software:
- * CLO 3D, Browzwear, Illustrator for fashion, Procreate, etc.)
+ * Digital PC design courses (specifically for software gratuito en macOS Apple Silicon):
+ * Inkscape, GIMP, Krita, Blender, CLO 3D (estudiante), Adobe Express, Adobe Fresco.
  * Free first, paid optional.
  */
 export const digitalDesignCourses: Course[] = [
   {
     id: "dd-course-1",
+    title: "Adobe Express: cursos gratuitos oficiales de Adobe",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 25 vídeos · 5h total",
+    why: "Adobe Express es la herramienta web gratuita de Adobe (alternativa a Canva). Adobe ofrece tutoriales oficiales 100% gratuitos en su canal de YouTube para crear mockups, posts para redes y presentaciones de marca. Sin coste, sin trial, sin tarjeta. Imprescindible para tu Mac.",
+    url: "https://www.youtube.com/results?search_query=adobe+express+tutorial+espa%C3%B1ol",
+    tag: "Gratis",
+  },
+  {
+    id: "dd-course-2",
+    title: "Inkscape para diseño de moda (YouTube, gratis)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 30 vídeos · 8h total",
+    why: "Inkscape es el editor vectorial gratuito líder en macOS Apple Silicon. Aprenderlo te permite crear flats y tech packs profesionales sin pagar Adobe Illustrator. Busca 'Inkscape fashion design' en YouTube: hay tutoriales específicos sobre flats, croquis y tech packs. Compatible con MacBook Air M4 nativo.",
+    url: "https://www.youtube.com/results?search_query=inkscape+fashion+design+tutorial",
+    tag: "Gratis",
+  },
+  {
+    id: "dd-course-3",
+    title: "Adobe Fresco: ilustración digital gratuita en Mac (oficial Adobe)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 15 vídeos · 4h total",
+    why: "Adobe Fresco es la app de ilustración de Adobe, gratis con cuenta Adobe ID. Funciona en Mac Apple Silicon. Tutoriales oficiales de Adobe te enseñan desde configurar pinceles hasta exportar ilustraciones para tu lookbook. Alternativa gratuita a Procreate (que solo existe en iPad).",
+    url: "https://www.youtube.com/results?search_query=adobe+fresco+tutorial+illustration",
+    tag: "Gratis",
+  },
+  {
+    id: "dd-course-4",
     title: "CLO 3D para principiantes (playlist gratuita en YouTube)",
     platform: "YouTube",
     price: 0,
     regularPrice: 0,
     duration: "Playlist de unos 20 vídeos · 6h total",
-    why: "CLO 3D es el software líder de diseño de moda en 3D. Aprenderlo te diferencia radicalmente de marcas que solo usan flats. Existe versión gratuita para estudiantes y trial de 30 días. Esta playlist en YouTube te lleva de cero a tu primera prenda virtual.",
+    why: "CLO 3D es el software líder de diseño de moda en 3D. Compatible con macOS Apple Silicon. Existe trial de 30 días y licencia de estudiante gratuita (verificada con email .edu). Esta playlist en YouTube te lleva de cero a tu primera prenda virtual sin coste.",
     url: "https://www.youtube.com/results?search_query=CLO+3D+beginner+tutorial",
     tag: "Gratis",
   },
   {
-    id: "dd-course-2",
-    title: "Adobe Illustrator para Fashion Design (Udemy en español)",
-    platform: "Udemy",
-    price: 13.99,
-    regularPrice: 89.99,
-    duration: "40 lecciones · aprox. 5h 30min",
-    why: "Illustrator es el estándar para flats y tech packs digitales. Este curso en español enseña a usar las herramientas específicas de moda: croquis, flats, escalado de patrones y exportación para fábricas. Imprescindible si quieres profesionalizar el diseño.",
-    url: "https://www.udemy.com/es/topic/adobe-illustrator/",
-    tag: "Pago",
+    id: "dd-course-5",
+    title: "Blender para diseño de moda 3D (YouTube, 100% gratis)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 25 vídeos · 7h total",
+    why: "Blender es 100% gratuito y nativo para macOS Apple Silicon. Su motor de simulación de telas (Cloth Simulator) es potente. Tutoriales específicos sobre cómo usar Blender para diseño de moda 3D, sin coste alguno. Alternativa libre a CLO 3D si no tienes licencia de estudiante.",
+    url: "https://www.youtube.com/results?search_query=blender+cloth+simulation+fashion",
+    tag: "Gratis",
   },
   {
-    id: "dd-course-3",
-    title: "3D Fashion Design with CLO (Coursera, audit gratis)",
+    id: "dd-course-6",
+    title: "Krita para ilustración de moda (YouTube, gratis)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 18 vídeos · 5h total",
+    why: "Krita es 100% gratuito y nativo para macOS Apple Silicon. Con tableta gráfica conectada a tu Mac, sustituye a Procreate (que solo existe en iPad). Tutoriales específicos para ilustración de moda digital, desde configurar pinceles hasta exportar croquis para tu lookbook.",
+    url: "https://www.youtube.com/results?search_query=krita+digital+painting+tutorial",
+    tag: "Gratis",
+  },
+  {
+    id: "dd-course-7",
+    title: "Adobe Creative Cloud para principiantes (Adobe Education, gratis)",
     platform: "Coursera",
     price: 0,
     regularPrice: 0,
-    duration: "5 módulos · aprox. 30h",
-    why: "Curso universitario (Parsons) sobre diseño de moda 3D con CLO. Auditable gratis. Profundiza en simulación de tejidos, ajuste de patrón y rendering fotorrealista. Nivel avanzado pero revolucionario para tu marca.",
-    url: "https://www.coursera.org/learn/3d-fashion-design",
+    duration: "6 módulos · aprox. 20h",
+    why: "Curso gratuito de Adobe Education sobre las herramientas gratuitas de Creative Cloud: Adobe Color, Adobe Fonts, Adobe Express, Adobe Fresco, Adobe Portfolio. Auditable gratis en Coursera. Ideal para entender el ecosistema Adobe sin pagar suscripción.",
+    url: "https://www.coursera.org/learn/adobe-creative-cloud",
     tag: "Audit gratis",
   },
   {
-    id: "dd-course-4",
-    title: "Procreate para Fashion Illustration (Domestika, opcional)",
-    platform: "Domestika",
-    price: 11.99,
-    regularPrice: 59.99,
-    duration: "18 unidades · aprox. 4h",
-    why: "Si tienes iPad, Procreate es la herramienta más fluida para ilustrar moda digitalmente. Curso que enseña desde configurar pinceles hasta exportar flats para tech pack. Solo si ya tienes iPad y Apple Pencil.",
-    url: "https://www.domestika.org/es/search?q=procreate+moda",
-    tag: "Pago",
+    id: "dd-course-8",
+    title: "GIMP para edición de imágenes (YouTube, gratis)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 20 vídeos · 6h total",
+    why: "GIMP es el equivalente gratuito de Photoshop, nativo para macOS Apple Silicon. Lo usas para editar fotos de producto, aplicar texturas y retocar mockups. Tutoriales en español sobre GIMP para principiantes. Sin coste, sin trial, ideal para Mac.",
+    url: "https://www.youtube.com/results?search_query=gimp+tutorial+espa%C3%B1ol+principiantes",
+    tag: "Gratis",
   },
 ];
 
@@ -389,94 +433,157 @@ export const resourceCategories: ResourceCategory[] = [
   },
   {
     id: "digital-pc-tools",
-    label: "Software Digital de Diseño de Moda (PC)",
+    label: "Software Digital de Diseño de Moda (macOS Apple Silicon M4)",
     description:
-      "Programas para diseñar prendas en ordenador: ilustración vectorial, simulación 3D y patronaje digital. Imprescindible para profesionalizar la marca.",
+      "Software gratuito y nativo para MacBook Air M4 (Apple Silicon). Todas estas herramientas se descargan como DMG y se instalan con drag-and-drop como cualquier app de Mac. Cero euros en suscripciones.",
     icon: "Monitor",
     resources: [
       {
-        name: "CLO 3D (trial 30 días + versión estudiante)",
+        name: "Inkscape (gratis, nativo Mac M4)",
         description:
-          "El estándar de la industria para diseño de moda 3D. Simula tejidos, ajusta patrones en tiempo real y renderiza imágenes fotorrealistas. Trial gratis de 30 días y licencia de estudiante con descuento.",
-        url: "https://www.clo3d.com",
-        tag: "Trial",
-      },
-      {
-        name: "Browzwear V-Stitcher (trial)",
-        description:
-          "Alternativa profesional a CLO 3D, usada por grandes marcas. Trial disponible bajo solicitud. Curva de aprendizaje alta pero potencia máxima.",
-        url: "https://browzwear.com",
-        tag: "Trial",
-      },
-      {
-        name: "Adobe Illustrator (plan único mensual)",
-        description:
-          "El estándar para flats y tech packs digitales. Vectorial, escalable. Plan mensual aprox. 24€/mes o prueba gratuita de 7 días. Imprescindible para comunicación con fábricas.",
-        url: "https://www.adobe.com/es/products/illustrator.html",
-        tag: "Trial",
-      },
-      {
-        name: "Adobe Photoshop (plan único mensual)",
-        description:
-          "Para mockups, edición de fotos de producto y texturas digitales. Plan mensual aprox. 24€/mes. Se complementa con Illustrator.",
-        url: "https://www.adobe.com/es/products/photoshop.html",
-        tag: "Trial",
-      },
-      {
-        name: "Affinity Designer (alternativa a Illustrator, pago único)",
-        description:
-          "Alternativa a Illustrator con pago único (sin suscripción). Aprox. 70€ una vez. Soporta vectores y píxeles en el mismo documento. Recomendado si odias los modelos de suscripción de Adobe.",
-        url: "https://affinity.serif.com/es/designer/",
-        tag: "Freemium",
-      },
-      {
-        name: "Procreate (iPad, pago único)",
-        description:
-          "App de ilustración digital para iPad. Pago único aprox. 13€. Solo para iPad con Apple Pencil. La herramienta más fluida para ilustración de moda a mano digital.",
-        url: "https://procreate.com",
-        tag: "Freemium",
-      },
-      {
-        name: "Krita (gratuito, alternativa a Procreate en PC)",
-        description:
-          "Software libre de ilustración digital para PC. Con tableta gráfica, sustituye a Procreate sin coste. Curva de aprendizaje media.",
-        url: "https://krita.org",
-        tag: "Gratis",
-      },
-      {
-        name: "Inkscape (gratuito, alternativa a Illustrator)",
-        description:
-          "Editor vectorial libre. Si no puedes pagar Illustrator ni Affinity, Inkscape hace el 80% del trabajo. Menos pulido pero potente.",
+          "Editor vectorial gratuito líder en macOS Apple Silicon. Alternativa libre a Adobe Illustrator. Tu herramienta principal para flats y tech packs. Instalación DMG desde inkscape.org.",
         url: "https://inkscape.org",
         tag: "Gratis",
       },
       {
-        name: "Stylezone (marketplace de CLO 3D)",
+        name: "GIMP (gratis, nativo Mac M4)",
         description:
-          "Plataforma gratuita de CLO 3D donde subir y compartir diseños 3D. Útil para presentar colecciones virtuales a inversores o colaboradores antes de fabricar.",
-        url: "https://www.stylezone.com",
+          "Equivalente gratuito de Photoshop, nativo para Apple Silicon. Edición de fotos de producto, texturas y mockups. Instalación DMG desde gimp.org.",
+        url: "https://www.gimp.org",
         tag: "Gratis",
       },
       {
-        name: "Marvelous Designer (alternativa a CLO 3D)",
+        name: "Krita (gratis, nativo Mac M4)",
         description:
-          "Software de simulación de telas más usado en cine y videojuegos que en moda, pero potente para prendas técnicas. Trial de 30 días. Más barato que CLO 3D.",
-        url: "https://www.marvelousdesigner.com",
+          "Software libre de ilustración digital. Con tableta gráfica USB, sustituye a Procreate (que solo existe en iPad). Pinceles profesionales y capas. DMG desde krita.org.",
+        url: "https://krita.org",
+        tag: "Gratis",
+      },
+      {
+        name: "Blender (100% gratis, nativo Mac M4)",
+        description:
+          "Software 3D libre y potente. Su Cloth Simulator permite simular telas para diseño de moda. Alternativa gratuita a CLO 3D. Nativo para Apple Silicon desde blender.org.",
+        url: "https://www.blender.org",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Express (web, gratis con cuenta Adobe)",
+        description:
+          "Herramienta web gratuita de Adobe, alternativa a Canva. Para mockups, posts para redes y presentaciones. Sin instalación, funciona en navegador. Cuenta Adobe ID gratuita.",
+        url: "https://express.adobe.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Fresco (gratis con cuenta Adobe, Mac App Store)",
+        description:
+          "App de ilustración de Adobe, gratuita con límites. Versión gratuita suficiente para croquis y bocetos. Disponible en Mac App Store, alternativa a Procreate en Mac.",
+        url: "https://www.adobe.com/es/products/fresco.html",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Color (web, 100% gratis)",
+        description:
+          "Herramienta web gratuita de Adobe para crear y explorar paletas de color. Exporta a ASE para Inkscape y a HEX para web. Sin cuenta, sin coste. Esencial para tu Brand Kit.",
+        url: "https://color.adobe.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Fonts (gratis con cuenta Adobe ID)",
+        description:
+          "Biblioteca de tipografías profesionales gratis con cuenta Adobe ID. Compatible con macOS. Sustituye a Google Fonts con opciones más premium. Licencia personal y comercial incluida.",
+        url: "https://fonts.adobe.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Portfolio (gratis con cuenta Adobe)",
+        description:
+          "Crea tu portfolio web de marca gratis con Adobe Portfolio. Plantillas minimalistas, hosting incluido. Útil para presentar tu marca a colaboradores antes de tener tienda Shopify.",
+        url: "https://portfolio.adobe.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Photopea (web, gratis)",
+        description:
+          "Editor de imágenes gratuito en navegador. Abre y guarda archivos PSD de Photoshop sin instalar nada. Alternativa web a GIMP cuando no puedes instalar apps.",
+        url: "https://www.photopea.com",
+        tag: "Gratis",
+      },
+      {
+        name: "CLO 3D (trial 30 días + estudiante gratis, Mac M4)",
+        description:
+          "Software líder de diseño de moda 3D. Compatible con macOS Apple Silicon. Trial gratis de 30 días. Licencia de estudiante gratuita verificada con email .edu. Profesional pero accesible.",
+        url: "https://www.clo3d.com",
         tag: "Trial",
+      },
+      {
+        name: "Valentina (patronaje, gratis, Mac)",
+        description:
+          "Software libre de patronaje para macOS. Alternativa gratuita a Seamly2D (que es más Windows). Crea patrones 2D escalables a partir de medidas. Curva de aprendizaje media.",
+        url: "https://valentinaproject.org",
+        tag: "Gratis",
+      },
+      {
+        name: "Procreate (solo iPad, 13€ pago único)",
+        description:
+          "Aclaración importante: Procreate NO existe para Mac. Es exclusivo de iPad. Si tienes iPad + Apple Pencil, es la app de ilustración más fluida. Para Mac, usa Krita o Adobe Fresco.",
+        url: "https://procreate.com",
+        tag: "Freemium",
       },
     ],
   },
   {
     id: "digital-pc-tutorials",
-    label: "Tutoriales YouTube · Diseño Digital de Moda",
+    label: "Tutoriales YouTube · Diseño Digital en Mac (software gratuito)",
     description:
-      "Canales y playlists específicos para aprender software de moda digital: CLO 3D, Illustrator for fashion, Procreate, Browzwear.",
+      "Canales y playlists específicos para aprender software gratuito de moda digital en macOS Apple Silicon: Inkscape, GIMP, Krita, Blender, CLO 3D y herramientas Adobe gratuitas.",
     icon: "Youtube",
     resources: [
       {
+        name: "Adobe Express Tutoriales oficiales (Adobe)",
+        description:
+          "Canal oficial de Adobe con tutoriales gratuitos sobre Adobe Express. Aprende a crear mockups, posts y presentaciones sin coste. En español e inglés.",
+        url: "https://www.youtube.com/results?search_query=adobe+express+tutorial+espa%C3%B1ol",
+        tag: "Gratis",
+      },
+      {
+        name: "Adobe Fresco Tutoriales oficiales",
+        description:
+          "Tutoriales oficiales de Adobe Fresco para ilustración digital. Aprende a configurar pinceles y exportar ilustraciones. Funciona en Mac Apple Silicon.",
+        url: "https://www.youtube.com/results?search_query=adobe+fresco+tutorial+illustration",
+        tag: "Gratis",
+      },
+      {
+        name: "Inkscape para Fashion Design (varios canales)",
+        description:
+          "Busca 'Inkscape fashion design' en YouTube. Tutoriales específicos sobre flats, croquis y tech packs vectoriales sin pagar Adobe Illustrator. Ideal para Mac M4.",
+        url: "https://www.youtube.com/results?search_query=inkscape+fashion+design+tutorial",
+        tag: "Gratis",
+      },
+      {
+        name: "GIMP Tutoriales en español",
+        description:
+          "Tutoriales en español sobre GIMP para principiantes. Edición de fotos de producto, texturas y mockups. GIMP es nativo para macOS Apple Silicon y 100% gratuito.",
+        url: "https://www.youtube.com/results?search_query=gimp+tutorial+espa%C3%B1ol+principiantes",
+        tag: "Gratis",
+      },
+      {
+        name: "Krita Digital Painting Tutoriales",
+        description:
+          "Tutoriales sobre Krita para ilustración digital. Con tableta gráfica conectada a tu Mac, Krita sustituye a Procreate (que solo existe en iPad). 100% gratis y nativo Apple Silicon.",
+        url: "https://www.youtube.com/results?search_query=krita+digital+painting+tutorial",
+        tag: "Gratis",
+      },
+      {
+        name: "Blender Cloth Simulation Tutoriales",
+        description:
+          "Tutoriales específicos sobre simulación de telas en Blender para diseño de moda 3D. Blender es 100% gratuito y nativo para macOS Apple Silicon. Alternativa libre a CLO 3D.",
+        url: "https://www.youtube.com/results?search_query=blender+cloth+simulation+fashion",
+        tag: "Gratis",
+      },
+      {
         name: "CLO 3D Official Channel",
         description:
-          "Canal oficial de CLO 3D con tutoriales paso a paso, casos de estudio y novedades del software. Punto de partida obligado.",
+          "Canal oficial de CLO 3D con tutoriales paso a paso, casos de estudio y novedades del software. Compatible con Mac Apple Silicon. Trial de 30 días y licencia estudiante gratuita.",
         url: "https://www.youtube.com/@CLO3D",
         tag: "Gratis",
       },
@@ -488,31 +595,10 @@ export const resourceCategories: ResourceCategory[] = [
         tag: "Gratis",
       },
       {
-        name: "Browzwear Tutorials",
+        name: "Adobe Education en Coursera (audit gratis)",
         description:
-          "Canal oficial de Browzwear con tutoriales de V-Stitcher y Lotta. Más técnico, ideal si te decides por esta alternativa a CLO 3D.",
-        url: "https://www.youtube.com/@Browzwear",
-        tag: "Gratis",
-      },
-      {
-        name: "Illustrator for Fashion (playlist)",
-        description:
-          "Busca 'Illustrator for fashion design' en YouTube. Hay canales como Design Roots o Jessica Oyelowo con tutoriales específicos de flats, croquis y tech packs digitales en Illustrator.",
-        url: "https://www.youtube.com/results?search_query=illustrator+fashion+design+tutorial",
-        tag: "Gratis",
-      },
-      {
-        name: "Procreate Fashion (varios)",
-        description:
-          "Busca 'Procreate fashion illustration' en YouTube. Hay tutoriales desde configuración de pinceles hasta cómo dibujar flats profesionalmente en iPad.",
-        url: "https://www.youtube.com/results?search_query=procreate+fashion+illustration",
-        tag: "Gratis",
-      },
-      {
-        name: "Tuttle Snutt (3D fashion)",
-        description:
-          "Canal especializado en diseño de moda 3D con CLO y Marvelous Designer. Casos prácticos y retos de rendering.",
-        url: "https://www.youtube.com/@tuttlesnutt",
+          "Curso oficial de Adobe Education sobre herramientas gratuitas de Creative Cloud: Color, Fonts, Express, Fresco, Portfolio. Auditable gratis en Coursera.",
+        url: "https://www.coursera.org/learn/adobe-creative-cloud",
         tag: "Gratis",
       },
     ],
@@ -1159,55 +1245,115 @@ export const glossary: GlossaryTerm[] = [
   {
     term: "CLO 3D",
     definition:
-      "Software líder de diseño de moda en 3D. Permite simular prendas sobre avatares virtuales, ajustar patrones en tiempo real y renderizar imágenes fotorrealistas sin necesidad de producir muestras físicas. Estándar de la industria desde 2020.",
+      "Software líder de diseño de moda en 3D. Permite simular prendas sobre avatares virtuales, ajustar patrones en tiempo real y renderizar imágenes fotorrealistas sin necesidad de producir muestras físicas. Compatible con macOS Apple Silicon. Trial de 30 días y licencia de estudiante gratuita con email .edu.",
+    category: "Moda",
+  },
+  {
+    term: "Blender",
+    definition:
+      "Software 3D 100% gratuito y de código abierto, nativo para macOS Apple Silicon. Su motor Cloth Simulator permite simular telas para diseño de moda. Alternativa libre a CLO 3D. Curva de aprendizaje mayor pero coste cero para siempre.",
+    category: "Moda",
+  },
+  {
+    term: "Inkscape",
+    definition:
+      "Editor vectorial gratuito y de código abierto, nativo para macOS Apple Silicon (M1 a M4). Alternativa libre a Adobe Illustrator. Estándar para flats y tech packs digitales en presupuestos cero. Instalación DMG desde inkscape.org.",
+    category: "Diseño",
+  },
+  {
+    term: "Adobe Express",
+    definition:
+      "Herramienta web gratuita de Adobe, alternativa a Canva. Funciona en navegador sin instalación. Permite crear mockups, posts para redes y presentaciones de marca. Cuenta Adobe ID gratuita. NO sustituye a Inkscape para flats, pero complementa para todo lo visual.",
+    category: "Diseño",
+  },
+  {
+    term: "Adobe Fresco",
+    definition:
+      "App de ilustración de Adobe, gratis con cuenta Adobe ID. Disponible en Mac App Store para macOS Apple Silicon. Versión gratuita suficiente para croquis y bocetos. Alternativa a Procreate (que solo existe en iPad) en Mac.",
+    category: "Diseño",
+  },
+  {
+    term: "Adobe Color",
+    definition:
+      "Herramienta web 100% gratuita de Adobe para crear y explorar paletas de color. Exporta a ASE (para Inkscape y GIMP) y a HEX (para web). Sin cuenta, sin coste. Esencial para tu Brand Kit bicromático.",
+    category: "Diseño",
+  },
+  {
+    term: "Adobe Fonts",
+    definition:
+      "Biblioteca de tipografías profesionales gratuita con cuenta Adobe ID. Compatible con macOS. Sustituye a Google Fonts con opciones más premium. Licencia personal y comercial incluida en el plan gratuito.",
+    category: "Diseño",
+  },
+  {
+    term: "Apple Silicon (M1, M2, M3, M4)",
+    definition:
+      "Familia de procesadores ARM diseñados por Apple para Mac. Incluyen GPU integrada potente. MacBook Air M4 pertenece a esta familia. La mayoría de software gratuito mencionado en esta guía (Inkscape, GIMP, Krita, Blender, CLO 3D) es nativo para Apple Silicon, sin necesidad de Rosetta 2.",
+    category: "Diseño",
+  },
+  {
+    term: "Rosetta 2",
+    definition:
+      "Tecnología de Apple que permite ejecutar apps compiladas para procesadores Intel en Mac con Apple Silicon. Casi todo el software actual ya es nativo para Apple Silicon. Solo apps antiguas o sin actualizar necesitan Rosetta 2. Si una app pide instalar Rosetta al abrirla, dilo a Sí (es un proceso automático).",
+    category: "Diseño",
+  },
+  {
+    term: "DMG (Disk Image)",
+    definition:
+      "Formato de archivo de instalación estándar en macOS. Para instalar apps desde DMG: doble clic para abrir, arrastra el icono de la app a la carpeta Applications, expulsa el DMG. Todo el software gratuito mencionado (Inkscape, GIMP, Krita, Blender) se distribuye en DMG para Mac.",
+    category: "Diseño",
+  },
+  {
+    term: "Valentina (patronaje)",
+    definition:
+      "Software libre de patronaje para macOS. Alternativa gratuita a Seamly2D (más orientado a Windows). Crea patrones 2D escalables a partir de medidas corporales. Curva de aprendizaje media. Ideal para cut-and-sew en el futuro.",
     category: "Moda",
   },
   {
     term: "Browzwear V-Stitcher",
     definition:
-      "Alternativa profesional a CLO 3D, usada por grandes marcas (Nike, Adidas, Lululemon). Más enfocado a producción industrial. Trial disponible bajo solicitud.",
+      "Alternativa profesional a CLO 3D, usada por grandes marcas (Nike, Adidas, Lululemon). Más enfocado a producción industrial. Trial disponible bajo solicitud. Solo para Windows (no Mac), por lo que no se recomienda si trabajas con MacBook Air M4.",
     category: "Moda",
   },
   {
     term: "Marvelous Designer",
     definition:
-      "Software de simulación de telas más usado en cine y videojuegos que en moda. Más barato que CLO 3D y útil para prendas técnicas y animación. Trial de 30 días.",
+      "Software de simulación de telas más usado en cine y videojuegos que en moda. Disponible para macOS pero solo para Intel (corre vía Rosetta 2 en Apple Silicon). Trial de 30 días. Alternativa a CLO 3D.",
     category: "Moda",
   },
   {
     term: "Vectorial (Vector)",
     definition:
-      "Tipo de imagen digital compuesta por trayectorias matemáticas, no píxeles. Escala sin perder calidad. Illustrator, Affinity Designer e Inkscape son editores vectoriales. Imprescindible para logos, flats y tech packs.",
+      "Tipo de imagen digital compuesta por trayectorias matemáticas, no píxeles. Escala sin perder calidad. Inkscape (gratis), Adobe Illustrator (pago) y Affinity Designer (pago único) son editores vectoriales. Imprescindible para logos, flats y tech packs.",
     category: "Diseño",
   },
   {
     term: "Flat digital",
     definition:
-      "Versión digital del flat sketch hecha en software vectorial (Illustrator, Affinity). Es el plano que va dentro del tech pack y el que el fabricante va a interpretar. Debe ser limpio, sin volumen y con líneas precisas.",
+      "Versión digital del flat sketch hecha en software vectorial (Inkscape en macOS gratuito, Illustrator en pago). Es el plano que va dentro del tech pack y el que el fabricante va a interpretar. Debe ser limpio, sin volumen y con líneas precisas.",
     category: "Moda",
   },
   {
     term: "Renderizado (Render)",
     definition:
-      "Proceso de generar una imagen fotorrealista a partir de un modelo 3D digital. En CLO 3D, el render produce imágenes de prendas virtuales que parecen fotos reales. Útil para vender colecciones antes de fabricar.",
+      "Proceso de generar una imagen fotorrealista a partir de un modelo 3D digital. En CLO 3D o Blender, el render produce imágenes de prendas virtuales que parecen fotos reales. Útil para vender colecciones antes de fabricar. Con MacBook Air M4, los renders son 5 a 10 veces más rápidos que en PC antiguo.",
     category: "Moda",
   },
   {
     term: "Avatar 3D",
     definition:
-      "Modelo humano virtual sobre el que se simulan prendas en CLO 3D o Browzwear. Se puede ajustar a medidas corporales reales para previsualizar fit y caída de la prenda sin necesidad de prototipo físico.",
+      "Modelo humano virtual sobre el que se simulan prendas en CLO 3D o Blender. Se puede ajustar a medidas corporales reales para previsualizar fit y caída de la prenda sin necesidad de prototipo físico.",
     category: "Moda",
   },
   {
     term: "Drapeado digital",
     definition:
-      "Simulación virtual de cómo cae y se mueve un tejido sobre un avatar 3D. Permite previsualizar el comportamiento del tejido antes de producir, ahorrando costes de muestras físicas.",
+      "Simulación virtual de cómo cae y se mueve un tejido sobre un avatar 3D. Permite previsualizar el comportamiento del tejido antes de producir, ahorrando costes de muestras físicas. CLO 3D y Blender (con Cloth Simulator) lo permiten.",
     category: "Moda",
   },
   {
     term: "Paso de muestra (Sampling Round)",
     definition:
-      "Cada iteración de prototipo físico que pides al fabricante. Con software 3D como CLO, puedes reducir los pasos de muestra de 3 a 1, ahorrando tiempo y cientos de euros por drop.",
+      "Cada iteración de prototipo físico que pides al fabricante. Con software 3D como CLO o Blender, puedes reducir los pasos de muestra de 3 a 1, ahorrando tiempo y cientos de euros por drop.",
     category: "Producción",
   },
 ];
