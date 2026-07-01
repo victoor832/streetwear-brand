@@ -61,13 +61,38 @@ export function Footer() {
           </div>
         </div>
 
+        {/* PDF download block */}
+        <div className="mt-10 border border-background/20 p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="space-y-1">
+            <span className="font-mono text-[10px] tracking-widest uppercase opacity-60 block">
+              Documento imprimible
+            </span>
+            <p className="text-sm sm:text-base font-semibold">
+              Descarga la guía completa en PDF (43 páginas, todo el contenido en un solo archivo).
+            </p>
+            <p className="text-xs opacity-60">
+              Incluye portada, las 7 secciones, el roadmap completo, cursos, recursos, hardware y glosario.
+            </p>
+          </div>
+          <a
+            href="/download/blackprint-guia-completa.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="shrink-0 inline-flex items-center gap-2 px-5 py-3 bg-background text-foreground text-xs font-mono tracking-wider uppercase hover:bg-background/85 transition-colors"
+          >
+            Descargar PDF
+            <span aria-hidden>↓</span>
+          </a>
+        </div>
+
         {/* Bottom bar */}
         <div className="mt-16 pt-6 border-t border-background/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono opacity-60">
           <div className="flex items-center gap-2">
             <span className="font-bold tracking-[0.15em]">BLACKPRINT</span>
             <span className="opacity-50">
-              · BLACKPRINT Guide. Versión 2.1 con modo oscuro, sección de
-              concepto, módulos de diseño de prendas y bloque de diseño digital en PC.
+              · BLACKPRINT Guide. Versión 2.2 con modo oscuro, sección de
+              concepto, módulos de diseño de prendas y bloque de diseño digital en Mac.
             </span>
           </div>
           <div className="flex items-center gap-4">
