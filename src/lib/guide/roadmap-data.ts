@@ -350,7 +350,7 @@ export const phases: Phase[] = [
         id: "3-12",
         label: "Hacer test completo de la web en móvil y desktop",
         hint:
-          "Pídele a 3 amigos que entren desde su móvil y te cuenten: ¿entienden qué vendes en 5 segundos? ¿Encuentran el formulario de email? Corrige antes de seguir.",
+          "Pide a 3 personas de confianza que entren desde su móvil y te cuenten: ¿entienden qué vendes en 5 segundos? ¿Encuentran el formulario de email? Corrige antes de seguir.",
         days: 2,
       },
     ],

@@ -66,8 +66,8 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <span className="font-bold tracking-[0.15em]">BLACKPRINT</span>
             <span className="opacity-50">
-              · Hecho con cuidado para un amigo. Versión 2.0 con modo oscuro, sección de
-              concepto y módulos de diseño de prendas.
+              · BLACKPRINT Guide. Versión 2.1 con modo oscuro, sección de
+              concepto, módulos de diseño de prendas y bloque de diseño digital en PC.
             </span>
           </div>
           <div className="flex items-center gap-4">

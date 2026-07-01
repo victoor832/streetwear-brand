@@ -11,6 +11,7 @@ import {
   Shirt,
   Package,
   BookOpen,
+  Monitor,
   ExternalLink,
   type LucideIcon,
 } from "lucide-react";
@@ -26,6 +27,7 @@ const iconMap: Record<string, LucideIcon> = {
   Shirt,
   Package,
   BookOpen,
+  Monitor,
 };
 
 export function Resources() {

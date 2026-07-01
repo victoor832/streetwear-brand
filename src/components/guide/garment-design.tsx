@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
-import { garmentDesignCourses } from "@/lib/guide/content-data";
+import { garmentDesignCourses, digitalDesignCourses } from "@/lib/guide/content-data";
 
 type Module = {
   num: string;
@@ -126,6 +126,81 @@ const modules: Module[] = [
   },
   {
     num: "M6",
+    level: "Nivel 55",
+    title: "Diseño digital en PC: Adobe Illustrator y Affinity",
+    duration: "2 semanas",
+    intro:
+      "Hasta aquí has trabajado a mano. Ahora toca profesionalizar: dibujar flats y tech packs en software vectorial. Adobe Illustrator es el estándar de la industria. Affinity Designer es la alternativa de pago único. Inkscape es la opción gratuita. Cualquiera de los tres te sirve, pero Illustrator abre más puertas.",
+    body: [
+      "Por qué vectorial y no píxeles. Un flat sketch debe escalarse sin perder calidad: lo dibujas una vez y lo usas en el tech pack, en el lookbook, en Instagram, en un cartel. Los gráficos vectoriales se componen de trayectorias matemáticas, no de píxeles, así que escalan infinitamente. Illustrator, Affinity e Inkscape son editores vectoriales. Photoshop y Krita son de píxeles: útiles para fotos y texturas, NO para flats.",
+      "Flujo de trabajo típico en Illustrator para fashion. 1) Importas tu boceto a mano como referencia (capa bloqueada con opacidad al 30%). 2) Sobre ella, dibujas con la herramienta Pluma (P) los contornos planos. 3) Añades las costuras con la herramienta Trazo punteado. 4) Etiquetas todas las medidas. 5) Exportas en AI, PDF y SVG. El resultado es un flat digital limpio que cualquier fabricante entiende.",
+      "Herramientas concretas que aprender primero en Illustrator. Pluma (P) para trazar. Selección directa (A) para ajustar puntos. Trazo para definir grosor y tipo de línea (continua para contornos, punteada para costuras). Símbolos para elementos repetibles (botones, ojales). Capas para separar flat frontal, posterior y detalles. Mascaras de recorte para aplicar texturas. Con estas 6 herramientas haces el 90% del trabajo.",
+      "Coste y alternativas. Illustrator es suscripción: aprox. 24€/mes con prueba de 7 días. Affinity Designer es pago único: aprox. 70€ para siempre, sin suscripción. Inkscape es gratuito y open source: hace el 80% del trabajo de Illustrator con menor pulido. Si tu presupuesto es cero, empieza con Inkscape. Si tienes 70€, ve a Affinity. Si puedes asumir 24€/mes, Illustrator es lo que usan todos los profesionales.",
+    ],
+    practical: {
+      title: "Dibuja tu primer flat digital en Illustrator",
+      description:
+        "Elige la prenda más sencilla de tu colección (probablemente la tee). Imprime tu boceto a mano. En Illustrator, importa la foto del boceto. Bloquéala en una capa con opacidad al 30%. Crea capa nueva encima. Con la Pluma, dibuja el contorno plano. Añade costuras con trazo punteado. Etiqueta medidas. Exporta en PDF. Compáralo con tu flat a mano: la diferencia será obvia.",
+    },
+    resources: [
+      { label: "Adobe Illustrator (trial 7 días)", url: "https://www.adobe.com/es/products/illustrator.html" },
+      { label: "Affinity Designer (pago único)", url: "https://affinity.serif.com/es/designer/" },
+      { label: "Inkscape (gratis)", url: "https://inkscape.org" },
+      { label: "Tutoriales Illustrator for Fashion en YouTube", url: "https://www.youtube.com/results?search_query=illustrator+fashion+design+tutorial" },
+    ],
+  },
+  {
+    num: "M7",
+    level: "Nivel 65",
+    title: "CLO 3D y simulación de prendas: la revolución del diseño digital",
+    duration: "3 a 4 semanas",
+    intro:
+      "CLO 3D es el software más revolucionario del diseño de moda en la última década. Permite simular una prenda en 3D, ver cómo cae el tejido, ajustar el patrón en tiempo real y renderizar imágenes fotorrealistas sin coser una sola pieza. Las grandes marcas ya lo usan. Aprenderlo te diferencia radicalmente.",
+    body: [
+      "Qué hace CLO 3D. Importas un patrón 2D (el que hiciste en M5 o que te dio un patronista). CLO lo cose virtualmente sobre un avatar 3D. Aplicas un tejido de su biblioteca (algodón pesado, ripstop, softshell). El software simula cómo cae y se mueve la prenda sobre el cuerpo. Puedes cambiar el tejido, el color o el ajuste en segundos. Renderizas una imagen que parece una foto real. Todo sin producir nada físico.",
+      "Por qué es revolucionario para una marca pequeña. Tradicionalmente, una marca pequeña necesitaba 3 rondas de muestras físicas (200 a 400€ por ronda) para afinar una prenda. Con CLO 3D, las 3 rondas se hacen virtualmente. Solo pides 1 muestra física al final, cuando el diseño está pulido. Ahorro: 400 a 800€ por prenda. Para una colección de 5 prendas, son 2.000 a 4.000€ ahorrados.",
+      "Coste y accesibilidad. CLO 3D tiene varias opciones. Trial gratuito de 30 días (ideal para hacer tu colección entera sin pagar). Licencia de estudiante con descuento (necesitas email .edu o documentación). Licencia profesional: aprox. 50€/mes o 500€/año (cara pero rentable si te ahorra muestras). Para tu primer drop, el trial de 30 días es suficiente si te organizas.",
+      "Cómo empezar sin abrumarte. NO intentes aprender CLO 3D en 1 semana. El software es complejo. Plan realista: semana 1, mira el tutorial oficial de CLO 3D en YouTube y haz su proyecto de muestra (camiseta básica). Semana 2, importa tu primer patrón real (la tee de tu colección). Semana 3, intenta un hoodie (más complejo). Semana 4, renderiza y exporta imágenes para tu lookbook. Si lo haces bien, en 4 semanas tienes tu primera colección virtual.",
+    ],
+    practical: {
+      title: "Tu primera prenda en CLO 3D",
+      description:
+        "Tras ver los tutoriales oficiales, coge el patrón de la camiseta de tu colección (puedes usar uno gratuito de la biblioteca de CLO). En 1 sesión de 4 horas, deberías tenerla cosida virtualmente, con tejido aplicado y un render básico. NO esperes perfección. El objetivo es entender el flujo: importar patrón, coser, aplicar tejido, renderizar. La perfección viene después.",
+    },
+    resources: [
+      { label: "CLO 3D (trial 30 días)", url: "https://www.clo3d.com" },
+      { label: "Canal oficial CLO 3D en YouTube", url: "https://www.youtube.com/@CLO3D" },
+      { label: "Zoe Hong playlist CLO 3D", url: "https://www.youtube.com/playlist?search=CLO+3D+zoehong" },
+      { label: "Coursera: 3D Fashion Design with CLO (audit gratis)", url: "https://www.coursera.org/learn/3d-fashion-design" },
+    ],
+  },
+  {
+    num: "M8",
+    level: "Nivel 75",
+    title: "Procreate y Krita: ilustración digital a mano",
+    duration: "1 a 2 semanas (opcional)",
+    intro:
+      "Si tu flujo de trabajo es más artístico que técnico, Procreate (en iPad) o Krita (en PC) son las herramientas ideales para ilustrar moda digitalmente a mano. No sustituyen a Illustrator (para flats) ni a CLO 3D (para simulación), pero son perfectas para croquis, presentaciones y moodboards digitales.",
+    body: [
+      "Procreate en iPad. App de pago único (13€) que convierte tu iPad en un cuaderno de bocetos infinito. Pinceles que imitan acuarela, rotulador, lápiz, óleo. Capas. Exportación a PSD, PNG, PDF. Si tienes iPad y Apple Pencil, es la herramienta más fluida para ilustración de moda digital. La curva de aprendizaje es muy baja: en 2 horas estás dibujando croquis presentables.",
+      "Krita en PC. Software libre y gratuito. Alternativa a Procreate para PC. Si tienes tableta gráfica Wacom o similar, Krita te da pinceles profesionales sin coste. Curva de aprendizaje media: más complejo que Procreate pero más potente. Recomendado si no tienes iPad pero sí tableta gráfica.",
+      "Cuándo usar ilustración digital vs CLO 3D vs Illustrator. Ilustración digital (Procreate/Krita): para croquis, presentaciones artísticas, lookbook. Illustrator: para flats y tech packs técnicos. CLO 3D: para simulación fotorrealista y validación de patronaje. Los 3 se complementan, no se excluyen. Una marca profesional usa los 3 según la fase.",
+      "Flujo recomendado para tu primer drop. 1) Bocetos a mano en libreta (M2). 2) Croquis digitales en Procreate/Krita para lookbook y redes sociales (M8). 3) Flats técnicos en Illustrator para tech packs (M6). 4) Simulación en CLO 3D para validar patronaje antes de pedir muestra física (M7). 5) Muestra física y producción. Este flujo te ahorra tiempo y dinero en cada paso.",
+    ],
+    practical: {
+      title: "Croquis digital de tu colección completa",
+      description:
+        "Si tienes Procreate (iPad) o Krita (PC), dibuja los 5 croquis de tu colección en digital. Usa una plantilla de croquis como base (las hay gratuitas en Pinterest). Aplica los colores de tu paleta. Exporta en PNG con fondo transparente. Estos 5 croquis serán la columna visual de tu lookbook y de tu Instagram durante las 4 semanas previas al drop.",
+    },
+    resources: [
+      { label: "Procreate (iPad)", url: "https://procreate.com" },
+      { label: "Krita (PC, gratis)", url: "https://krita.org" },
+      { label: "Tutoriales Procreate Fashion en YouTube", url: "https://www.youtube.com/results?search_query=procreate+fashion+illustration" },
+      { label: "Pinterest: croquis templates", url: "https://www.pinterest.com/search/pins/?q=fashion%20croquis%20template" },
+    ],
+  },
+  {
+    num: "M9",
     level: "Nivel 60",
     title: "Tejidos y materiales: clasificación y comportamiento",
     duration: "1 semana",
@@ -148,7 +223,7 @@ const modules: Module[] = [
     ],
   },
   {
-    num: "M7",
+    num: "M10",
     level: "Nivel 70",
     title: "Mockups y prototipos: visualizar antes de fabricar",
     duration: "1 semana",
@@ -170,7 +245,7 @@ const modules: Module[] = [
     ],
   },
   {
-    num: "M8",
+    num: "M11",
     level: "Nivel 80",
     title: "Producción: blanks, POD o cut-and-sew",
     duration: "Teórico",
@@ -189,7 +264,7 @@ const modules: Module[] = [
     },
   },
   {
-    num: "M9",
+    num: "M12",
     level: "Nivel 90",
     title: "Presentación profesional: lookbook y línea de tiempo",
     duration: "1 semana",
@@ -207,7 +282,7 @@ const modules: Module[] = [
     },
   },
   {
-    num: "M10",
+    num: "M13",
     level: "Nivel 100",
     title: "Iteración y escala: del primer drop al segundo",
     duration: "Continuo",
@@ -239,8 +314,8 @@ export function GarmentDesign() {
             </span>
             <div className="hidden lg:block w-12 h-px bg-foreground" />
             <p className="font-mono text-xs text-muted-foreground leading-relaxed">
-              De 0 a 100 en 10 módulos. Asume que no sabes nada. Empieza por M1, no te saltes
-              nada.
+              De 0 a 100 en 13 módulos. Asume que no sabes nada. Empieza por M1, no te saltes
+              nada. Incluye bloque específico de diseño digital en PC (M6 a M8).
             </p>
           </div>
           <div className="lg:col-span-8 space-y-5">
@@ -408,6 +483,82 @@ export function GarmentDesign() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Digital PC design courses block */}
+        <div className="mt-16 border-t border-border pt-12">
+          <div className="space-y-3 max-w-2xl mb-8">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
+              Cursos para diseño digital en PC
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-bold tracking-tight leading-tight">
+              Aprende CLO 3D, Illustrator y Procreate con cursos reales.
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Estos cursos cubren las 3 herramientas clave del diseño digital de moda: CLO 3D
+              (simulación 3D), Adobe Illustrator (flats y tech packs) y Procreate (ilustración
+              en iPad). Hay opciones gratuitas (Coursera audit y playlists de YouTube) y de pago
+              (Udemy y Domestika). Elige 1 o 2 según el software que vayas a usar.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border">
+            {digitalDesignCourses.map((c, idx) => (
+              <div key={c.id} className="bg-background p-5 sm:p-6 flex flex-col gap-3">
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[10px] tracking-widest uppercase text-muted-foreground">
+                    {String(idx + 1).padStart(2, "0")} / {c.platform}
+                  </span>
+                  <span
+                    className={`font-mono text-[10px] px-1.5 py-0.5 ${
+                      c.tag === "Gratis" || c.tag === "Audit gratis"
+                        ? "bg-foreground text-background"
+                        : "border border-foreground"
+                    }`}
+                  >
+                    {c.tag}
+                  </span>
+                </div>
+                <h4 className="text-sm sm:text-base font-bold leading-snug">{c.title}</h4>
+                <p className="text-xs text-muted-foreground leading-relaxed flex-1">{c.why}</p>
+                <div className="flex items-end justify-between pt-3 border-t border-border">
+                  <div>
+                    {c.regularPrice > 0 && c.price < c.regularPrice && (
+                      <span className="font-mono text-[10px] line-through text-muted-foreground block">
+                        {c.regularPrice.toFixed(2).replace(".", ",")}€
+                      </span>
+                    )}
+                    <span className="text-lg font-bold tabular-nums">
+                      {c.price === 0 ? "0€" : `${c.price.toFixed(2).replace(".", ",")}€`}
+                    </span>
+                  </div>
+                  <a
+                    href={c.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-foreground underline underline-offset-4 hover:no-underline"
+                  >
+                    Ver
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Honest note */}
+          <div className="mt-6 border border-dashed border-border p-5 sm:p-6 bg-background">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-foreground mb-2">
+              Sobre el orden recomendado
+            </h4>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Si solo puedes elegir 1 curso, empieza por el de CLO 3D (Coursera, gratis). Es el
+              que más impacto tendrá en tu capacidad de diseñar prendas profesionales sin
+              gastar en muestras físicas. Si te queda presupuesto, el de Illustrator en Udemy
+              (13,99€) es el complemento perfecto para flats y tech packs. El de Procreate solo
+              si ya tienes iPad y Apple Pencil.
+            </p>
           </div>
         </div>
       </div>

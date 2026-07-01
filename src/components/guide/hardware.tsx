@@ -115,10 +115,10 @@ export function Hardware() {
           <div className="border-l-2 border-foreground pl-4 py-2">
             <h4 className="font-semibold text-sm mb-1">¿Y un portátil?</h4>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Si tu amigo ya tiene cualquier portátil de los últimos 4 años (8GB RAM mínimo),
-              NO necesita comprar uno nuevo. Figma y Shopify funcionan en cualquier máquina
-              decente. Solo considera actualizar si tiene menos de 8GB RAM o un disco HDD (no
-              SSD).
+              Si ya tienes cualquier portátil de los últimos 4 años (8GB RAM mínimo),
+              NO necesitas comprar uno nuevo. Figma y Shopify funcionan en cualquier máquina
+              decente. Solo considera actualizar si tienes menos de 8GB RAM o un disco HDD (no
+              SSD). Para diseño digital avanzado (CLO 3D, Browzwear) se recomiendan 16GB RAM.
             </p>
           </div>
           <div className="border-l-2 border-border pl-4 py-2">
@@ -139,8 +139,8 @@ export function Hardware() {
           <p className="text-sm text-muted-foreground leading-relaxed">
             Los 50€ de cursos más el hardware son solo el inicio. El coste real del primer drop
             (incluyendo dominio, Shopify 3 meses, muestras físicas y producción de 50 prendas)
-            oscila entre 600€ y 1.500€ dependiendo de la vía (POD, blanks o cut-and-sew). Tu
-            amigo debe tener esto claro desde el principio para no frustrarse cuando llegue la
+            oscila entre 600€ y 1.500€ dependiendo de la vía (POD, blanks o cut-and-sew). Es
+            importante tener esto claro desde el principio para no frustrarse cuando llegue la
             fase de producción.
           </p>
         </div>

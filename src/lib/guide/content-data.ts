@@ -101,6 +101,58 @@ export const garmentDesignCourses: Course[] = [
   },
 ];
 
+/**
+ * Digital PC design courses (specifically for fashion software:
+ * CLO 3D, Browzwear, Illustrator for fashion, Procreate, etc.)
+ * Free first, paid optional.
+ */
+export const digitalDesignCourses: Course[] = [
+  {
+    id: "dd-course-1",
+    title: "CLO 3D para principiantes (playlist gratuita en YouTube)",
+    platform: "YouTube",
+    price: 0,
+    regularPrice: 0,
+    duration: "Playlist de unos 20 vídeos · 6h total",
+    why: "CLO 3D es el software líder de diseño de moda en 3D. Aprenderlo te diferencia radicalmente de marcas que solo usan flats. Existe versión gratuita para estudiantes y trial de 30 días. Esta playlist en YouTube te lleva de cero a tu primera prenda virtual.",
+    url: "https://www.youtube.com/results?search_query=CLO+3D+beginner+tutorial",
+    tag: "Gratis",
+  },
+  {
+    id: "dd-course-2",
+    title: "Adobe Illustrator para Fashion Design (Udemy en español)",
+    platform: "Udemy",
+    price: 13.99,
+    regularPrice: 89.99,
+    duration: "40 lecciones · aprox. 5h 30min",
+    why: "Illustrator es el estándar para flats y tech packs digitales. Este curso en español enseña a usar las herramientas específicas de moda: croquis, flats, escalado de patrones y exportación para fábricas. Imprescindible si quieres profesionalizar el diseño.",
+    url: "https://www.udemy.com/es/topic/adobe-illustrator/",
+    tag: "Pago",
+  },
+  {
+    id: "dd-course-3",
+    title: "3D Fashion Design with CLO (Coursera, audit gratis)",
+    platform: "Coursera",
+    price: 0,
+    regularPrice: 0,
+    duration: "5 módulos · aprox. 30h",
+    why: "Curso universitario (Parsons) sobre diseño de moda 3D con CLO. Auditable gratis. Profundiza en simulación de tejidos, ajuste de patrón y rendering fotorrealista. Nivel avanzado pero revolucionario para tu marca.",
+    url: "https://www.coursera.org/learn/3d-fashion-design",
+    tag: "Audit gratis",
+  },
+  {
+    id: "dd-course-4",
+    title: "Procreate para Fashion Illustration (Domestika, opcional)",
+    platform: "Domestika",
+    price: 11.99,
+    regularPrice: 59.99,
+    duration: "18 unidades · aprox. 4h",
+    why: "Si tienes iPad, Procreate es la herramienta más fluida para ilustrar moda digitalmente. Curso que enseña desde configurar pinceles hasta exportar flats para tech pack. Solo si ya tienes iPad y Apple Pencil.",
+    url: "https://www.domestika.org/es/search?q=procreate+moda",
+    tag: "Pago",
+  },
+];
+
 export type ResourceCategory = {
   id: string;
   label: string;
@@ -332,6 +384,136 @@ export const resourceCategories: ResourceCategory[] = [
           "Software profesional de patronaje con versión demo gratuita. Para entender qué herramientas usan los profesionales.",
         url: "https://www.wildginger.com",
         tag: "Trial",
+      },
+    ],
+  },
+  {
+    id: "digital-pc-tools",
+    label: "Software Digital de Diseño de Moda (PC)",
+    description:
+      "Programas para diseñar prendas en ordenador: ilustración vectorial, simulación 3D y patronaje digital. Imprescindible para profesionalizar la marca.",
+    icon: "Monitor",
+    resources: [
+      {
+        name: "CLO 3D (trial 30 días + versión estudiante)",
+        description:
+          "El estándar de la industria para diseño de moda 3D. Simula tejidos, ajusta patrones en tiempo real y renderiza imágenes fotorrealistas. Trial gratis de 30 días y licencia de estudiante con descuento.",
+        url: "https://www.clo3d.com",
+        tag: "Trial",
+      },
+      {
+        name: "Browzwear V-Stitcher (trial)",
+        description:
+          "Alternativa profesional a CLO 3D, usada por grandes marcas. Trial disponible bajo solicitud. Curva de aprendizaje alta pero potencia máxima.",
+        url: "https://browzwear.com",
+        tag: "Trial",
+      },
+      {
+        name: "Adobe Illustrator (plan único mensual)",
+        description:
+          "El estándar para flats y tech packs digitales. Vectorial, escalable. Plan mensual aprox. 24€/mes o prueba gratuita de 7 días. Imprescindible para comunicación con fábricas.",
+        url: "https://www.adobe.com/es/products/illustrator.html",
+        tag: "Trial",
+      },
+      {
+        name: "Adobe Photoshop (plan único mensual)",
+        description:
+          "Para mockups, edición de fotos de producto y texturas digitales. Plan mensual aprox. 24€/mes. Se complementa con Illustrator.",
+        url: "https://www.adobe.com/es/products/photoshop.html",
+        tag: "Trial",
+      },
+      {
+        name: "Affinity Designer (alternativa a Illustrator, pago único)",
+        description:
+          "Alternativa a Illustrator con pago único (sin suscripción). Aprox. 70€ una vez. Soporta vectores y píxeles en el mismo documento. Recomendado si odias los modelos de suscripción de Adobe.",
+        url: "https://affinity.serif.com/es/designer/",
+        tag: "Freemium",
+      },
+      {
+        name: "Procreate (iPad, pago único)",
+        description:
+          "App de ilustración digital para iPad. Pago único aprox. 13€. Solo para iPad con Apple Pencil. La herramienta más fluida para ilustración de moda a mano digital.",
+        url: "https://procreate.com",
+        tag: "Freemium",
+      },
+      {
+        name: "Krita (gratuito, alternativa a Procreate en PC)",
+        description:
+          "Software libre de ilustración digital para PC. Con tableta gráfica, sustituye a Procreate sin coste. Curva de aprendizaje media.",
+        url: "https://krita.org",
+        tag: "Gratis",
+      },
+      {
+        name: "Inkscape (gratuito, alternativa a Illustrator)",
+        description:
+          "Editor vectorial libre. Si no puedes pagar Illustrator ni Affinity, Inkscape hace el 80% del trabajo. Menos pulido pero potente.",
+        url: "https://inkscape.org",
+        tag: "Gratis",
+      },
+      {
+        name: "Stylezone (marketplace de CLO 3D)",
+        description:
+          "Plataforma gratuita de CLO 3D donde subir y compartir diseños 3D. Útil para presentar colecciones virtuales a inversores o colaboradores antes de fabricar.",
+        url: "https://www.stylezone.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Marvelous Designer (alternativa a CLO 3D)",
+        description:
+          "Software de simulación de telas más usado en cine y videojuegos que en moda, pero potente para prendas técnicas. Trial de 30 días. Más barato que CLO 3D.",
+        url: "https://www.marvelousdesigner.com",
+        tag: "Trial",
+      },
+    ],
+  },
+  {
+    id: "digital-pc-tutorials",
+    label: "Tutoriales YouTube · Diseño Digital de Moda",
+    description:
+      "Canales y playlists específicos para aprender software de moda digital: CLO 3D, Illustrator for fashion, Procreate, Browzwear.",
+    icon: "Youtube",
+    resources: [
+      {
+        name: "CLO 3D Official Channel",
+        description:
+          "Canal oficial de CLO 3D con tutoriales paso a paso, casos de estudio y novedades del software. Punto de partida obligado.",
+        url: "https://www.youtube.com/@CLO3D",
+        tag: "Gratis",
+      },
+      {
+        name: "Zoe Hong (playlist CLO 3D)",
+        description:
+          "Zoe Hong tiene una playlist específica sobre CLO 3D para principiantes. Muy didáctica, ideal para empezar desde cero con el software.",
+        url: "https://www.youtube.com/playlist?search=CLO+3D+zoehong",
+        tag: "Gratis",
+      },
+      {
+        name: "Browzwear Tutorials",
+        description:
+          "Canal oficial de Browzwear con tutoriales de V-Stitcher y Lotta. Más técnico, ideal si te decides por esta alternativa a CLO 3D.",
+        url: "https://www.youtube.com/@Browzwear",
+        tag: "Gratis",
+      },
+      {
+        name: "Illustrator for Fashion (playlist)",
+        description:
+          "Busca 'Illustrator for fashion design' en YouTube. Hay canales como Design Roots o Jessica Oyelowo con tutoriales específicos de flats, croquis y tech packs digitales en Illustrator.",
+        url: "https://www.youtube.com/results?search_query=illustrator+fashion+design+tutorial",
+        tag: "Gratis",
+      },
+      {
+        name: "Procreate Fashion (varios)",
+        description:
+          "Busca 'Procreate fashion illustration' en YouTube. Hay tutoriales desde configuración de pinceles hasta cómo dibujar flats profesionalmente en iPad.",
+        url: "https://www.youtube.com/results?search_query=procreate+fashion+illustration",
+        tag: "Gratis",
+      },
+      {
+        name: "Tuttle Snutt (3D fashion)",
+        description:
+          "Canal especializado en diseño de moda 3D con CLO y Marvelous Designer. Casos prácticos y retos de rendering.",
+        url: "https://www.youtube.com/@tuttlesnutt",
+        tag: "Gratis",
       },
     ],
   },
@@ -661,7 +843,7 @@ export const hardwareTiers: HardwareTier[] = [
     total: "≈ 58€",
     tagline: "Lo justo para bocetar y digitalizar.",
     description:
-      "Si el presupuesto es ajustado. Con esto tu amigo puede completar las fases de Concepto, Diseño de Prendas y Marca y Web sin problema. Añadimos un álbum de bocetos específico para prendas.",
+      "Si el presupuesto es ajustado. Con este kit se pueden completar las fases de Concepto, Diseño de Prendas y Marca y Web sin problema. Incluye bloc de bocetos específico para moda.",
     items: [
       {
         name: "Libreta Moleskine A5 cuadriculada",
@@ -702,7 +884,7 @@ export const hardwareTiers: HardwareTier[] = [
     total: "≈ 165€",
     tagline: "Tableta gráfica para digitalizar como profesional.",
     description:
-      "El equilibrio perfecto. Tu amigo podrá digitalizar bocetos a mano con tableta, iluminar bien su espacio y grabar vídeos de proceso con el móvil. Recomendado para alguien que va en serio.",
+      "El equilibrio perfecto. Permite digitalizar bocetos a mano con tableta, iluminar bien el espacio y grabar vídeos de proceso con el móvil. Recomendado para alguien que va en serio.",
     items: [
       {
         name: "Todo lo del Kit Esencial",
@@ -973,5 +1155,59 @@ export const glossary: GlossaryTerm[] = [
     definition:
       "Texto breve (1 a 3 párrafos) que declara qué defiende tu marca y contra qué se rebela. Es la declaración de intenciones que da coherencia a todas tus decisiones futuras.",
     category: "Marketing",
+  },
+  {
+    term: "CLO 3D",
+    definition:
+      "Software líder de diseño de moda en 3D. Permite simular prendas sobre avatares virtuales, ajustar patrones en tiempo real y renderizar imágenes fotorrealistas sin necesidad de producir muestras físicas. Estándar de la industria desde 2020.",
+    category: "Moda",
+  },
+  {
+    term: "Browzwear V-Stitcher",
+    definition:
+      "Alternativa profesional a CLO 3D, usada por grandes marcas (Nike, Adidas, Lululemon). Más enfocado a producción industrial. Trial disponible bajo solicitud.",
+    category: "Moda",
+  },
+  {
+    term: "Marvelous Designer",
+    definition:
+      "Software de simulación de telas más usado en cine y videojuegos que en moda. Más barato que CLO 3D y útil para prendas técnicas y animación. Trial de 30 días.",
+    category: "Moda",
+  },
+  {
+    term: "Vectorial (Vector)",
+    definition:
+      "Tipo de imagen digital compuesta por trayectorias matemáticas, no píxeles. Escala sin perder calidad. Illustrator, Affinity Designer e Inkscape son editores vectoriales. Imprescindible para logos, flats y tech packs.",
+    category: "Diseño",
+  },
+  {
+    term: "Flat digital",
+    definition:
+      "Versión digital del flat sketch hecha en software vectorial (Illustrator, Affinity). Es el plano que va dentro del tech pack y el que el fabricante va a interpretar. Debe ser limpio, sin volumen y con líneas precisas.",
+    category: "Moda",
+  },
+  {
+    term: "Renderizado (Render)",
+    definition:
+      "Proceso de generar una imagen fotorrealista a partir de un modelo 3D digital. En CLO 3D, el render produce imágenes de prendas virtuales que parecen fotos reales. Útil para vender colecciones antes de fabricar.",
+    category: "Moda",
+  },
+  {
+    term: "Avatar 3D",
+    definition:
+      "Modelo humano virtual sobre el que se simulan prendas en CLO 3D o Browzwear. Se puede ajustar a medidas corporales reales para previsualizar fit y caída de la prenda sin necesidad de prototipo físico.",
+    category: "Moda",
+  },
+  {
+    term: "Drapeado digital",
+    definition:
+      "Simulación virtual de cómo cae y se mueve un tejido sobre un avatar 3D. Permite previsualizar el comportamiento del tejido antes de producir, ahorrando costes de muestras físicas.",
+    category: "Moda",
+  },
+  {
+    term: "Paso de muestra (Sampling Round)",
+    definition:
+      "Cada iteración de prototipo físico que pides al fabricante. Con software 3D como CLO, puedes reducir los pasos de muestra de 3 a 1, ahorrando tiempo y cientos de euros por drop.",
+    category: "Producción",
   },
 ];

@@ -13,9 +13,9 @@ export function Intro() {
           </span>
           <div className="hidden lg:block w-12 h-px bg-foreground" />
           <p className="font-mono text-xs text-muted-foreground leading-relaxed">
-            Hecha para un amigo. Adaptada a su nicho (techwear), su país (España), su edad
-            (18 a 25) y su nivel (cero absoluto). Versión 2.0 con secciones nuevas de concepto
-            de marca y diseño de prendas.
+            Guía de referencia. Adaptada al nicho techwear, país España, edad
+            (18 a 25) y nivel (cero absoluto). Versión 2.1 con secciones de concepto,
+            diseño de prendas y diseño digital en PC.
           </p>
         </div>
 
