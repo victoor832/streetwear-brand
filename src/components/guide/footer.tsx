@@ -1,0 +1,72 @@
+"use client";
+
+export function Footer() {
+  return (
+    <footer className="relative border-t border-border bg-foreground text-background mt-auto">
+      {/* Big closing message */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 sm:py-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          {/* Left: closing statement */}
+          <div className="lg:col-span-8 space-y-6">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase opacity-60">
+              End of document / BP-001
+            </span>
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.02]">
+              Tu primer drop no es la línea de meta.
+              <br />
+              <span className="opacity-60">Es la señal de salida.</span>
+            </h2>
+            <p className="max-w-2xl text-base sm:text-lg opacity-80 leading-relaxed">
+              Esta guía es un punto de partida, no un contrato. Adáptala a tu ritmo, a tu
+              realidad y a lo que vayas descubriendo por el camino. Lo único que no se puede
+              adaptar es la constancia: sin ella, ni el mejor roadmap del mundo sirve.
+            </p>
+          </div>
+
+          {/* Right: meta */}
+          <div className="lg:col-span-4 grid grid-cols-2 gap-6 text-xs font-mono">
+            <div className="space-y-1">
+              <span className="opacity-50 block uppercase tracking-widest text-[10px]">
+                Documento
+              </span>
+              <span>BP-001 / v1.0</span>
+              <span className="opacity-60 block">2026</span>
+            </div>
+            <div className="space-y-1">
+              <span className="opacity-50 block uppercase tracking-widest text-[10px]">
+                Scope
+              </span>
+              <span>Techwear ES</span>
+              <span className="opacity-60 block">Nivel cero</span>
+            </div>
+            <div className="space-y-1">
+              <span className="opacity-50 block uppercase tracking-widest text-[10px]">
+                Duración
+              </span>
+              <span>6 meses</span>
+              <span className="opacity-60 block">4 fases / 46 tareas</span>
+            </div>
+            <div className="space-y-1">
+              <span className="opacity-50 block uppercase tracking-widest text-[10px]">
+                Inversión
+              </span>
+              <span>≤ 50€ cursos</span>
+              <span className="opacity-60 block">+ hardware opcional</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-16 pt-6 border-t border-background/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono opacity-60">
+          <div className="flex items-center gap-2">
+            <span className="font-bold tracking-[0.15em]">BLACKPRINT</span>
+            <span className="opacity-50">— Hecho con cuidado para un amigo.</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <span>Tu progreso se guarda solo en este navegador.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
