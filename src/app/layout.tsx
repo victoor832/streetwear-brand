@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/guide/theme-provider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -16,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BLACKPRINT — Roadmap de Marca Techwear de Cero a Drop",
+  title: "BLACKPRINT · Roadmap de Marca Techwear de Cero a Drop",
   description:
     "Guía maestra interactiva para crear una marca streetwear techwear desde cero en 6 meses. Diseñada para principiantes absolutos: roadmap visual, cursos, recursos gratis y hardware.",
   keywords: [
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     icon: "/logo.svg",
   },
   openGraph: {
-    title: "BLACKPRINT — Roadmap de Marca Techwear",
+    title: "BLACKPRINT · Roadmap de Marca Techwear",
     description:
       "De cero a primer drop en 6 meses. Guía interactiva minimalista para principiantes absolutos.",
     type: "website",
@@ -50,8 +51,15 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-background text-foreground font-sans`}
       >
-        {children}
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

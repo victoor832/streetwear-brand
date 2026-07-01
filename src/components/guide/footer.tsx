@@ -21,6 +21,11 @@ export function Footer() {
               realidad y a lo que vayas descubriendo por el camino. Lo único que no se puede
               adaptar es la constancia: sin ella, ni el mejor roadmap del mundo sirve.
             </p>
+            <p className="max-w-2xl text-sm opacity-70 leading-relaxed">
+              Si llegaste hasta aquí, ya estás más cerca que el 90% de la gente que dice 'algún
+              día montaré una marca'. El día que lances tu primer drop, escríbenos. Lo
+              celebraremos contigo.
+            </p>
           </div>
 
           {/* Right: meta */}
@@ -29,7 +34,7 @@ export function Footer() {
               <span className="opacity-50 block uppercase tracking-widest text-[10px]">
                 Documento
               </span>
-              <span>BP-001 / v1.0</span>
+              <span>BP-001 / v2.0</span>
               <span className="opacity-60 block">2026</span>
             </div>
             <div className="space-y-1">
@@ -44,7 +49,7 @@ export function Footer() {
                 Duración
               </span>
               <span>6 meses</span>
-              <span className="opacity-60 block">4 fases / 46 tareas</span>
+              <span className="opacity-60 block">5 fases / 64 tareas</span>
             </div>
             <div className="space-y-1">
               <span className="opacity-50 block uppercase tracking-widest text-[10px]">
@@ -60,7 +65,10 @@ export function Footer() {
         <div className="mt-16 pt-6 border-t border-background/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs font-mono opacity-60">
           <div className="flex items-center gap-2">
             <span className="font-bold tracking-[0.15em]">BLACKPRINT</span>
-            <span className="opacity-50">— Hecho con cuidado para un amigo.</span>
+            <span className="opacity-50">
+              · Hecho con cuidado para un amigo. Versión 2.0 con modo oscuro, sección de
+              concepto y módulos de diseño de prendas.
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <span>Tu progreso se guarda solo en este navegador.</span>

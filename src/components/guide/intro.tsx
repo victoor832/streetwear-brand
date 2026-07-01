@@ -14,7 +14,8 @@ export function Intro() {
           <div className="hidden lg:block w-12 h-px bg-foreground" />
           <p className="font-mono text-xs text-muted-foreground leading-relaxed">
             Hecha para un amigo. Adaptada a su nicho (techwear), su país (España), su edad
-            (18-25) y su nivel (cero absoluto).
+            (18 a 25) y su nivel (cero absoluto). Versión 2.0 con secciones nuevas de concepto
+            de marca y diseño de prendas.
           </p>
         </div>
 
@@ -37,10 +38,16 @@ export function Intro() {
                 Cómo funciona
               </h3>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Esta guía está dividida en 4 fases que cubren 6 meses. Cada fase tiene tareas
-                concretas y marcables. Tu progreso se guarda en este navegador — puedes cerrar
+                Esta guía está dividida en 5 fases que cubren 6 meses. Cada fase tiene tareas
+                concretas y marcables. Tu progreso se guarda en este navegador: puedes cerrar
                 y volver cuando quieras, las casillas seguirán ahí. Tacha una cada vez que la
                 completes, sin prisa pero sin pausa.
+              </p>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                Antes del roadmap encontrarás 2 secciones de profundización: la primera sobre
+                cómo definir tu marca desde cero (concepto, cliente ideal, estilo), la segunda
+                sobre cómo se diseña ropa (de 0 a 100, asumiendo que no sabes nada). Dedica
+                tiempo a ambas. Sin esa base, el roadmap es solo una lista de tareas sin alma.
               </p>
             </div>
             <div className="space-y-3">
@@ -52,6 +59,11 @@ export function Intro() {
                 No te vende nada. Es un mapa honesto: hace explícito el camino real que recorren
                 las marcas que duran. Lo que hagas con él depende de tu constancia.
               </p>
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                Tampoco es un manual de negocio. Si buscas cómo montar una SL, hacer
+                declaraciones de IVA o gestionar inventario contablemente, necesitarás un
+                asesor. Aquí nos centramos en lo creativo y lo esencial para lanzar.
+              </p>
             </div>
           </div>
 
@@ -61,29 +73,24 @@ export function Intro() {
               {
                 num: "01",
                 title: "Identidad antes que producto",
-                body: "Las marcas que duran saben qué son ANTES de coser una sola prenda. Tu marca es una opinión, no un logo.",
+                body: "Las marcas que duran saben qué son ANTES de coser una sola prenda. Tu marca es una opinión, no un logo. Si no sabes qué opinas, nadie te seguirá.",
               },
               {
                 num: "02",
                 title: "Comunidad antes que venta",
-                body: "Si tienes 100 personas que de verdad quieren lo que haces, tienes un negocio. Si tienes 10.000 curiosos, tienes ruido.",
+                body: "Si tienes 100 personas que de verdad quieren lo que haces, tienes un negocio. Si tienes 10.000 curiosos, tienes ruido. Construye comunidad, no audiencia.",
               },
               {
                 num: "03",
                 title: "Pequeño, perfecto, repetido",
-                body: "Un primer drop de 3 prendas excepcionales vale más que uno de 10 mediocres. Empieza enfocado, crece con criterio.",
+                body: "Un primer drop de 3 prendas excepcionales vale más que uno de 10 mediocres. Empieza enfocado, crece con criterio. La constancia vence al talento.",
               },
             ].map((p) => (
-              <div
-                key={p.num}
-                className="bg-background p-5 sm:p-6 flex flex-col gap-3"
-              >
+              <div key={p.num} className="bg-background p-5 sm:p-6 flex flex-col gap-3">
                 <span className="font-mono text-xs tracking-widest text-muted-foreground">
                   {p.num}
                 </span>
-                <h4 className="font-sans font-semibold text-base leading-snug">
-                  {p.title}
-                </h4>
+                <h4 className="font-sans font-semibold text-base leading-snug">{p.title}</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">{p.body}</p>
               </div>
             ))}
@@ -92,8 +99,8 @@ export function Intro() {
           {/* Honest disclaimer */}
           <div className="mt-8 border-l-2 border-foreground pl-4 sm:pl-6 py-2">
             <p className="text-sm sm:text-base text-muted-foreground italic leading-relaxed">
-              "Las marcas que vale la pena construir tardan más en construirse. Pero también
-              duran más." — Anónimo, en algún foro de streetwear que ya no existe.
+              Las marcas que vale la pena construir tardan más en construirse, pero también
+              duran más. Anónimo, en algún foro de streetwear que ya no existe.
             </p>
           </div>
         </div>

@@ -11,7 +11,7 @@ export function Hardware() {
         {/* Header */}
         <div className="space-y-3 max-w-3xl mb-12">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
-            04 / Hardware y materiales
+            06 / Hardware y materiales
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05]">
             El set físico.{" "}
@@ -20,7 +20,7 @@ export function Hardware() {
           <p className="text-base text-muted-foreground leading-relaxed">
             Tres niveles de presupuesto para que elijas el que mejor encaje como regalo. Los
             precios son orientativos (Amazon español, julio 2026) y los productos concretos son
-            recomendaciones — sustituye por equivalentes si lo prefieres.
+            recomendaciones. Sustituye por equivalentes si lo prefieres.
           </p>
         </div>
 
@@ -35,11 +35,8 @@ export function Hardware() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className={`p-6 sm:p-8 flex flex-col gap-6 ${
-                  isFeatured ? "bg-background" : "bg-background"
-                } relative`}
+                className={`p-6 sm:p-8 flex flex-col gap-6 bg-background relative`}
               >
-                {/* Recommended badge */}
                 {isFeatured && (
                   <div className="absolute top-0 right-0 bg-foreground text-background px-3 py-1.5 font-mono text-[10px] tracking-widest uppercase">
                     Recomendado
@@ -57,9 +54,7 @@ export function Hardware() {
                     </span>
                   </div>
                   <h3 className="text-2xl sm:text-3xl font-bold tracking-tight">{tier.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {tier.tagline}
-                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{tier.tagline}</p>
                 </div>
 
                 {/* Total */}
@@ -115,7 +110,7 @@ export function Hardware() {
           })}
         </div>
 
-        {/* Honest disclaimer */}
+        {/* Honest disclaimers */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="border-l-2 border-foreground pl-4 py-2">
             <h4 className="font-semibold text-sm mb-1">¿Y un portátil?</h4>
@@ -130,10 +125,24 @@ export function Hardware() {
             <h4 className="font-semibold text-sm mb-1">¿Tableta con pantalla o sin pantalla?</h4>
             <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
               Las tablets sin pantalla (Wacom Intuos) son más baratas pero requieren coordinación
-              ojo-mano diferente. Las con pantalla (iPad + Pencil) son más intuitivas. Si es tu
+              ojo-mano diferente. Las con pantalla (iPad y Pencil) son más intuitivas. Si es tu
               primer regalo serio, ve a por el iPad.
             </p>
           </div>
+        </div>
+
+        {/* Honest note on budget */}
+        <div className="mt-6 border border-dashed border-border p-5 sm:p-6 bg-background">
+          <h4 className="font-mono text-xs uppercase tracking-widest text-foreground mb-2">
+            Nota sobre el presupuesto total del proyecto
+          </h4>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Los 50€ de cursos más el hardware son solo el inicio. El coste real del primer drop
+            (incluyendo dominio, Shopify 3 meses, muestras físicas y producción de 50 prendas)
+            oscila entre 600€ y 1.500€ dependiendo de la vía (POD, blanks o cut-and-sew). Tu
+            amigo debe tener esto claro desde el principio para no frustrarse cuando llegue la
+            fase de producción.
+          </p>
         </div>
       </div>
     </section>

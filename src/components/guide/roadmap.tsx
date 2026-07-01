@@ -27,16 +27,17 @@ export function Roadmap({ completed, completedCount, onToggle, onReset }: Props)
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
             <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
-              01 / Roadmap visual
+              03 / Roadmap visual
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05]">
-              4 fases. 6 meses.{" "}
+              5 fases. 6 meses.{" "}
               <span className="text-muted-foreground">{totalTasks} tareas.</span>
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed">
               Tu progreso se guarda automáticamente en este navegador. Marca cada tarea cuando
-              la termines — no antes. La honestidad con uno mismo es la primera disciplina de
-              un fundador.
+              la termines, no antes. La honestidad con uno mismo es la primera disciplina de
+              un fundador. Antes de empezar el roadmap, recomendamos pasar por las secciones
+              Concepto y Diseño para tener contexto.
             </p>
           </div>
 

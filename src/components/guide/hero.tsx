@@ -17,10 +17,10 @@ export function Hero() {
       <div className="relative max-w-7xl mx-auto w-full flex items-start justify-between text-[10px] sm:text-xs font-mono tracking-widest text-muted-foreground uppercase">
         <div className="flex flex-col gap-1">
           <span>Doc // BP-001</span>
-          <span className="hidden sm:inline">Versión 1.0 — 2026</span>
+          <span className="hidden sm:inline">Versión 2.0 · 2026</span>
         </div>
         <div className="flex flex-col gap-1 text-right">
-          <span> España / ES</span>
+          <span>España / ES</span>
           <span className="hidden sm:inline">Techwear Brief</span>
         </div>
       </div>
@@ -37,7 +37,7 @@ export function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-border bg-background/60">
             <span className="w-1.5 h-1.5 bg-foreground rounded-full animate-pulse" />
             <span className="font-mono text-[10px] sm:text-xs tracking-[0.18em] uppercase">
-              Guía interactiva / 6 meses
+              Guía interactiva · 6 meses · nivel cero
             </span>
           </div>
 
@@ -55,31 +55,35 @@ export function Hero() {
             <span className="text-foreground font-medium">
               nunca ha tocado diseño, ni webs, ni fabricación
             </span>{" "}
-            — y quiere lanzar su primer drop en seis meses.
+            y quiere lanzar su primer drop en seis meses.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <button
               onClick={() =>
-                document
-                  .getElementById("roadmap")
-                  ?.scrollIntoView({ behavior: "smooth" })
+                document.getElementById("concepto")?.scrollIntoView({ behavior: "smooth" })
               }
               className="group inline-flex items-center gap-3 px-5 py-3 bg-foreground text-background text-sm font-mono tracking-wider uppercase hover:bg-foreground/85 transition-colors"
             >
-              <span>Empezar el roadmap</span>
+              <span>Empezar por el concepto</span>
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </button>
             <button
               onClick={() =>
-                document
-                  .getElementById("cursos")
-                  ?.scrollIntoView({ behavior: "smooth" })
+                document.getElementById("diseno")?.scrollIntoView({ behavior: "smooth" })
               }
               className="inline-flex items-center gap-2 px-5 py-3 border border-border text-sm font-mono tracking-wider uppercase hover:border-foreground transition-colors"
             >
-              Ver cursos (&lt;50€)
+              Ver módulos de diseño
+            </button>
+            <button
+              onClick={() =>
+                document.getElementById("roadmap")?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="inline-flex items-center gap-2 px-5 py-3 text-sm font-mono tracking-wider uppercase text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Ir al roadmap →
             </button>
           </div>
         </motion.div>
@@ -95,7 +99,7 @@ export function Hero() {
         {[
           { k: "Duración", v: "6 meses" },
           { k: "Inversión cursos", v: "≤ 50€" },
-          { k: "Fases del roadmap", v: "04" },
+          { k: "Fases del roadmap", v: "05" },
           { k: "Nivel técnico", v: "Cero" },
         ].map((stat) => (
           <div

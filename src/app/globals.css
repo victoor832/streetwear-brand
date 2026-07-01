@@ -44,7 +44,7 @@
 }
 
 :root {
-  /* Forced B&W + grayscale palette — techwear minimalist */
+  /* Forced B&W + grayscale palette, techwear minimalist */
   --radius: 0.125rem; /* sharper corners for techwear feel */
   --background: oklch(1 0 0);
   --foreground: oklch(0.08 0 0);

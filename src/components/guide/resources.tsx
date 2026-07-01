@@ -8,6 +8,9 @@ import {
   Puzzle,
   Users,
   GraduationCap,
+  Shirt,
+  Package,
+  BookOpen,
   ExternalLink,
   type LucideIcon,
 } from "lucide-react";
@@ -20,6 +23,9 @@ const iconMap: Record<string, LucideIcon> = {
   Puzzle,
   Users,
   GraduationCap,
+  Shirt,
+  Package,
+  BookOpen,
 };
 
 export function Resources() {
@@ -29,15 +35,16 @@ export function Resources() {
         {/* Header */}
         <div className="space-y-3 max-w-3xl mb-12">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
-            03 / Ecosistema de recursos gratuitos
+            05 / Ecosistema de recursos gratuitos
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05]">
             Todo lo que necesitas,{" "}
             <span className="text-muted-foreground">sin gastar un euro más.</span>
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
-            Más de 30 herramientas, canales y comunidades seleccionadas a mano. No están todas
-            las que existen, solo las que de verdad usarás. Marca esta página en favoritos.
+            Más de 50 herramientas, canales y comunidades seleccionadas a mano. No están todas
+            las que existen, solo las que de verdad usarás. Marcadas como Gratis, Freemium o
+            Trial para que sepas qué esperar antes de pinchar.
           </p>
         </div>
 
@@ -60,9 +67,7 @@ export function Resources() {
                     <Icon className="w-4 h-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-bold tracking-tight">
-                      {cat.label}
-                    </h3>
+                    <h3 className="text-lg sm:text-xl font-bold tracking-tight">{cat.label}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mt-1">
                       {cat.description}
                     </p>
@@ -73,7 +78,7 @@ export function Resources() {
                 </div>
 
                 {/* Resource list */}
-                <ul className="space-y-3">
+                <ul className="space-y-3 max-h-[480px] overflow-y-auto scroll-thin pr-2">
                   {cat.resources.map((r) => (
                     <ResourceItem key={r.name} resource={r} />
                   ))}
@@ -83,23 +88,23 @@ export function Resources() {
           })}
         </div>
 
-        {/* Footer tip */}
+        {/* Footer tips */}
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-px bg-border border border-border">
           {[
             {
               num: "01",
               title: "No te suscribas a todo",
-              body: "Elige 2-3 canales de YouTube y síguelos a fondo. Suscribirte a 50 no te hace más productivo, te hace más ansioso.",
+              body: "Elige 2 o 3 canales de YouTube y síguelos a fondo. Suscribirte a 50 no te hace más productivo, te hace más ansioso. La profundidad vence a la amplitud.",
             },
             {
               num: "02",
               title: "Usa el plan gratis primero",
-              body: "Las versiones gratuitas de Figma, Mailchimp y Canva son suficientes para llegar a tu primer drop. Paga solo cuando el negocio lo justifique.",
+              body: "Las versiones gratuitas de Figma, Mailchimp y Canva son suficientes para llegar a tu primer drop. Paga solo cuando el negocio lo justifique con ingresos.",
             },
             {
               num: "03",
               title: "Participa, no observes",
-              body: "En Reddit y Discord, el 90% aprende leyendo y el 10% enseña respondiendo. Sé parte del 10% — es la forma más rápida de aprender y de hacer networking.",
+              body: "En Reddit y Discord, el 90% aprende leyendo y el 10% enseña respondiendo. Sé parte del 10%. Es la forma más rápida de aprender y de hacer networking real.",
             },
           ].map((tip) => (
             <div key={tip.num} className="bg-background p-5 sm:p-6 flex flex-col gap-2">

@@ -10,15 +10,14 @@ const categories: Array<{ id: GlossaryTerm["category"] | "Todos"; label: string 
   { id: "Producción", label: "Producción" },
   { id: "E-commerce", label: "E-commerce" },
   { id: "Marketing", label: "Marketing" },
+  { id: "Moda", label: "Moda" },
 ];
 
 export function Glossary() {
   const [active, setActive] = useState<GlossaryTerm["category"] | "Todos">("Todos");
 
   const filtered =
-    active === "Todos"
-      ? glossary
-      : glossary.filter((t) => t.category === active);
+    active === "Todos" ? glossary : glossary.filter((t) => t.category === active);
 
   return (
     <section id="glosario" className="relative border-t border-border bg-background">
@@ -26,15 +25,16 @@ export function Glossary() {
         {/* Header */}
         <div className="space-y-3 max-w-3xl mb-10">
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
-            05 / Glosario del principiante
+            07 / Glosario del principiante
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05]">
             Cada término técnico,{" "}
             <span className="text-muted-foreground">explicado como a un humano.</span>
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
-            Cuando un tutorial o un fabricante use una palabra que no entiendas, vuelve aquí. Si
-            echas en falta algún término, escríbelo en tu libreta y búscalo después.
+            Cuando un tutorial o un fabricante use una palabra que no entiendas, vuelve aquí.
+            Si echas en falta algún término, escríbelo en tu libreta y búscalo después. Este
+            glosario crece contigo.
           </p>
         </div>
 
