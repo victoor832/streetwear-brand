@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BrandCards } from "@/components/guide/brand-cards";
 
 type Step = {
   num: string;
@@ -261,6 +262,24 @@ export function BrandDefinition() {
               </div>
             </motion.article>
           ))}
+        </div>
+
+        {/* Brand reference cards (for task 1-4) */}
+        <div className="mt-16 border-t border-border pt-10">
+          <div className="space-y-3 max-w-2xl mb-6">
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground">
+              Fichas de marcas referentes
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-bold tracking-tight leading-tight">
+              Las 5 marcas techwear que tienes que estudiar en la tarea 1-4.
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              En la tarea 1-4 del roadmap se te pide estudiar 5 marcas referentes en profundidad.
+              Aquí tienes las fichas completas de cada una, con web oficial, Instagram, descripción
+              y prenda hero de estudio. Clic en cada marca para expandir la ficha.
+            </p>
+          </div>
+          <BrandCards />
         </div>
 
         {/* Closing reminder */}

@@ -125,7 +125,7 @@ export const digitalDesignCourses: Course[] = [
     price: 0,
     regularPrice: 0,
     duration: "Playlist de unos 30 vídeos · 8h total",
-    why: "Inkscape es el editor vectorial gratuito líder en macOS Apple Silicon. Aprenderlo te permite crear flats y tech packs profesionales sin pagar Adobe Illustrator. Busca 'Inkscape fashion design' en YouTube: hay tutoriales específicos sobre flats, croquis y tech packs. Compatible con MacBook Air M4 nativo.",
+    why: "Inkscape es el editor vectorial gratuito líder en macOS Apple Silicon. Aprenderlo te permite crear flats y tech packs profesionales sin pagar Adobe Illustrator. Tutoriales específicos sobre flats, croquis y tech packs en el enlace directo. Compatible con MacBook Air M4 nativo.",
     url: "https://www.youtube.com/results?search_query=inkscape+fashion+design+tutorial",
     tag: "Gratis",
   },
@@ -275,7 +275,7 @@ export const resourceCategories: ResourceCategory[] = [
         name: "Zoe Hong",
         description:
           "La referencia en inglés para diseñadores de moda principiantes. Playlists de fashion illustration, tech packs y collection development. Visualmente impecable.",
-        url: "https://www.youtube.com/@zoehong",
+        url: "https://www.youtube.com/zoehongteaches",
         tag: "Gratis",
       },
       {
@@ -295,7 +295,7 @@ export const resourceCategories: ResourceCategory[] = [
       {
         name: "Escuela de Diseño (varios canales en español)",
         description:
-          "Busca 'patronaje básico español' en YouTube. Hay canales como Moda Fácil o Costura Creativa con tutoriales paso a paso para principiantes absolutos.",
+          "Canales recomendados en español: Moda Fácil, Costura Creativa. Tutoriales paso a paso para principiantes absolutos. Enlace directo a la búsqueda curada más abajo.",
         url: "https://www.youtube.com/results?search_query=patronaje+espa%C3%B1ol+principiantes",
         tag: "Gratis",
       },
@@ -390,7 +390,7 @@ export const resourceCategories: ResourceCategory[] = [
       {
         name: "Fashion Frog Croquis (Pinterest)",
         description:
-          "Plantillas gratuitas de figura humana (croquis) sobre las que dibujar tus prendas. Busca 'fashion croquis template free' en Pinterest.",
+          "Plantillas gratuitas de figura humana (croquis) sobre las que dibujar tus prendas. Enlace directo a la búsqueda curada en Pinterest.",
         url: "https://www.pinterest.com/search/pins/?q=fashion%20croquis%20template",
         tag: "Gratis",
       },
@@ -409,17 +409,10 @@ export const resourceCategories: ResourceCategory[] = [
         tag: "Gratis",
       },
       {
-        name: "Seamly2D",
+        name: "Seamly2D (fork activo de Valentina, Mac)",
         description:
-          "Software libre de patronaje (pattern making). Curva de aprendizaje alta pero gratuito y profesional. Útil en Fase avanzada.",
+          "Software libre de patronaje para macOS Apple Silicon. Es el fork activo del proyecto Valentina original (que está parado). Compatible con Mac y Windows. Crea patrones 2D escalables a partir de medidas corporales.",
         url: "https://seamly.net",
-        tag: "Gratis",
-      },
-      {
-        name: "Valentina Project",
-        description:
-          "Otra alternativa open source para patronaje. Comunidad activa, ideal si te decides por cut-and-sew en el futuro.",
-        url: "https://valentinaproject.org",
         tag: "Gratis",
       },
       {
@@ -516,14 +509,14 @@ export const resourceCategories: ResourceCategory[] = [
         tag: "Trial",
       },
       {
-        name: "Valentina (patronaje, gratis, Mac)",
+        name: "Seamly2D (patronaje, gratis, Mac)",
         description:
-          "Software libre de patronaje para macOS. Alternativa gratuita a Seamly2D (que es más Windows). Crea patrones 2D escalables a partir de medidas. Curva de aprendizaje media.",
-        url: "https://valentinaproject.org",
+          "Software libre de patronaje para macOS Apple Silicon. Es el fork activo del proyecto Valentina (que está parado). Crea patrones 2D escalables a partir de medidas corporales. Curva de aprendizaje media.",
+        url: "https://seamly.net",
         tag: "Gratis",
       },
       {
-        name: "Procreate (solo iPad, 13€ pago único)",
+        name: "Procreate [SOLO iPAD] (13€ pago único)",
         description:
           "Aclaración importante: Procreate NO existe para Mac. Es exclusivo de iPad. Si tienes iPad + Apple Pencil, es la app de ilustración más fluida. Para Mac, usa Krita o Adobe Fresco.",
         url: "https://procreate.com",
@@ -555,7 +548,7 @@ export const resourceCategories: ResourceCategory[] = [
       {
         name: "Inkscape para Fashion Design (varios canales)",
         description:
-          "Busca 'Inkscape fashion design' en YouTube. Tutoriales específicos sobre flats, croquis y tech packs vectoriales sin pagar Adobe Illustrator. Ideal para Mac M4.",
+          "Tutoriales específicos sobre flats, croquis y tech packs vectoriales sin pagar Adobe Illustrator. Ideal para Mac M4. Enlace directo a la búsqueda curada.",
         url: "https://www.youtube.com/results?search_query=inkscape+fashion+design+tutorial",
         tag: "Gratis",
       },
@@ -588,10 +581,10 @@ export const resourceCategories: ResourceCategory[] = [
         tag: "Gratis",
       },
       {
-        name: "Zoe Hong (playlist CLO 3D)",
+        name: "Zoe Hong playlist Tech Pack",
         description:
-          "Zoe Hong tiene una playlist específica sobre CLO 3D para principiantes. Muy didáctica, ideal para empezar desde cero con el software.",
-        url: "https://www.youtube.com/playlist?search=CLO+3D+zoehong",
+          "Playlist específica de Zoe Hong sobre Tech Packs: cómo construirlos paso a paso, ejemplos reales y plantillas. Directa al grano.",
+        url: "https://www.youtube.com/playlist?list=PLenrM9mHOMGyIaXP7WxZJXJArpwxE18wj",
         tag: "Gratis",
       },
       {
@@ -613,7 +606,7 @@ export const resourceCategories: ResourceCategory[] = [
       {
         name: "Unsplash",
         description:
-          "Fotografía artística de alta calidad. Busca 'techwear', 'urban', 'minimal architecture'.",
+          "Fotografía artística de alta calidad. Términos útiles en la búsqueda: 'techwear', 'urban', 'minimal architecture'.",
         url: "https://unsplash.com",
         tag: "Gratis",
       },
@@ -648,7 +641,7 @@ export const resourceCategories: ResourceCategory[] = [
       {
         name: "Dribbble",
         description:
-          "Inspiración de UI/UX y logos. Busca 'techwear logo' para ver lo que ya existe y diferenciarte.",
+          "Inspiración de UI/UX y logos. Término útil en la búsqueda: 'techwear logo' para ver lo que ya existe y diferenciarte.",
         url: "https://dribbble.com",
         tag: "Gratis",
       },
@@ -676,10 +669,10 @@ export const resourceCategories: ResourceCategory[] = [
         tag: "Freemium",
       },
       {
-        name: "Filatures du Park (Tienda online)",
+        name: "Filatures du Parc (técnicos, Francia)",
         description:
-          "Tejidos técnicos y sostenibles. Especialmente útil para techwear (cordura, ripstop, softshell).",
-        url: "https://www.filaturesduteich.com",
+          "Tejidos técnicos y sostenibles. Especialmente útil para techwear (cordura, ripstop, softshell). Empresa francesa, el nombre correcto es Filatures du Parc.",
+        url: "https://www.filaturesduparc.com",
         tag: "Freemium",
       },
       {
@@ -815,10 +808,17 @@ export const resourceCategories: ResourceCategory[] = [
     icon: "GraduationCap",
     resources: [
       {
-        name: "Shopify Compass",
+        name: "Shopify Academy (antiguo Shopify Compass)",
         description:
-          "Cursos 100% gratuitos de Shopify sobre ecommerce, marketing y branding. Empieza por aquí.",
-        url: "https://www.shopify.com/learn",
+          "Cursos 100% gratuitos de Shopify sobre ecommerce, marketing y branding. Ahora integrado en Shopify Learn. En inglés. Para español, ver Ecomkers abajo.",
+        url: "https://academy.shopify.com",
+        tag: "Gratis",
+      },
+      {
+        name: "Ecomkers: Curso Shopify 0 a 100 (español, aprobado por Shopify)",
+        description:
+          "El mejor curso de Shopify en español, gratuito y oficialmente recomendado por Shopify España. Cubre todo: registro, theme, productos, pagos, envíos. Alternativa en español al Shopify Academy.",
+        url: "https://www.ecomkers.com/curso-shopify-0-a-100",
         tag: "Gratis",
       },
       {
@@ -1303,9 +1303,9 @@ export const glossary: GlossaryTerm[] = [
     category: "Diseño",
   },
   {
-    term: "Valentina (patronaje)",
+    term: "Seamly2D (patronaje)",
     definition:
-      "Software libre de patronaje para macOS. Alternativa gratuita a Seamly2D (más orientado a Windows). Crea patrones 2D escalables a partir de medidas corporales. Curva de aprendizaje media. Ideal para cut-and-sew en el futuro.",
+      "Software libre de patronaje para macOS Apple Silicon. Es el fork activo del proyecto Valentina original (que está parado). Compatible con Mac y Windows. Crea patrones 2D escalables a partir de medidas corporales. Curva de aprendizaje media. Ideal para cut-and-sew en el futuro.",
     category: "Moda",
   },
   {

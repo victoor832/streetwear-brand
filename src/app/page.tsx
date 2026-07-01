@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { Nav } from "@/components/guide/nav";
+import { GlobalProgressBar } from "@/components/guide/global-progress-bar";
 import { Hero } from "@/components/guide/hero";
 import { Intro } from "@/components/guide/intro";
 import { BrandDefinition } from "@/components/guide/brand-definition";
@@ -16,7 +17,9 @@ import { useProgress } from "@/lib/guide/use-progress";
 import { totalTasks } from "@/lib/guide/roadmap-data";
 
 export default function Home() {
-  const { completed, toggle, reset, hydrated } = useProgress("blackprint-progress-v2");
+  const { completed, notes, toggle, setNote, reset, hydrated } = useProgress(
+    "blackprint-progress-v3"
+  );
 
   const completedCount = useMemo(() => completed.size, [completed]);
   const progressPercent = hydrated
@@ -26,16 +29,19 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Nav progressPercent={progressPercent} />
+      <GlobalProgressBar completed={completedCount} total={totalTasks} />
 
-      <main className="flex-1">
+      <main className="flex-1 pt-6">
         <Hero />
         <Intro />
         <BrandDefinition />
         <GarmentDesign />
         <Roadmap
           completed={completed}
+          notes={notes}
           completedCount={completedCount}
           onToggle={toggle}
+          onSetNote={setNote}
           onReset={reset}
         />
         <Courses />
@@ -48,3 +54,4 @@ export default function Home() {
     </div>
   );
 }
+

@@ -3,19 +3,18 @@
 import { useEffect, useState, useCallback } from "react";
 
 /**
- * Hook for persisting roadmap task completion in localStorage.
- * Tracks a set of task IDs that have been checked off.
- *
- * Pattern: we use a single state object to avoid multiple setState calls
- * within the effect, which would trigger React's "set-state-in-effect" rule.
+ * Hook for persisting roadmap task completion AND per-task notes in localStorage.
+ * Tracks a set of task IDs that have been checked off + a map of notes by task ID.
  */
 type ProgressState = {
   completed: Set<string>;
+  notes: Record<string, string>;
   hydrated: boolean;
 };
 
 const initialState: ProgressState = {
   completed: new Set<string>(),
+  notes: {},
   hydrated: false,
 };
 
@@ -23,24 +22,46 @@ export function useProgress(storageKey: string) {
   const [state, setState] = useState<ProgressState>(initialState);
 
   useEffect(() => {
-    // Read once on mount and hydrate. This is a single setState call
-    // (not cascading) so it doesn't violate the set-state-in-effect rule.
     let completed = new Set<string>();
+    let notes: Record<string, string> = {};
     try {
       const raw = localStorage.getItem(storageKey);
       if (raw) {
-        const arr = JSON.parse(raw) as string[];
-        completed = new Set(arr);
+        const parsed = JSON.parse(raw) as {
+          completed?: string[];
+          notes?: Record<string, string>;
+        };
+        if (Array.isArray(parsed.completed)) {
+          completed = new Set(parsed.completed);
+        }
+        if (parsed.notes && typeof parsed.notes === "object") {
+          notes = parsed.notes;
+        }
       }
     } catch {
       // ignore
     }
-    // Schedule the state update outside the effect's synchronous body
-    // by using the functional updater form, which React batches safely.
     Promise.resolve().then(() => {
-      setState({ completed, hydrated: true });
+      setState({ completed, notes, hydrated: true });
     });
   }, [storageKey]);
+
+  const persist = useCallback(
+    (completed: Set<string>, notes: Record<string, string>) => {
+      try {
+        localStorage.setItem(
+          storageKey,
+          JSON.stringify({
+            completed: Array.from(completed),
+            notes,
+          })
+        );
+      } catch {
+        // ignore
+      }
+    },
+    [storageKey]
+  );
 
   const toggle = useCallback(
     (id: string) => {
@@ -51,15 +72,27 @@ export function useProgress(storageKey: string) {
         } else {
           next.add(id);
         }
-        try {
-          localStorage.setItem(storageKey, JSON.stringify(Array.from(next)));
-        } catch {
-          // ignore
-        }
+        persist(next, prev.notes);
         return { ...prev, completed: next };
       });
     },
-    [storageKey]
+    [persist]
+  );
+
+  const setNote = useCallback(
+    (id: string, value: string) => {
+      setState((prev) => {
+        const nextNotes = { ...prev.notes };
+        if (value.trim() === "") {
+          delete nextNotes[id];
+        } else {
+          nextNotes[id] = value;
+        }
+        persist(prev.completed, nextNotes);
+        return { ...prev, notes: nextNotes };
+      });
+    },
+    [persist]
   );
 
   const reset = useCallback(() => {
@@ -69,13 +102,15 @@ export function useProgress(storageKey: string) {
       } catch {
         // ignore
       }
-      return { ...prev, completed: new Set<string>() };
+      return { completed: new Set<string>(), notes: {}, hydrated: prev.hydrated };
     });
   }, [storageKey]);
 
   return {
     completed: state.completed,
+    notes: state.notes,
     toggle,
+    setNote,
     reset,
     hydrated: state.hydrated,
   };

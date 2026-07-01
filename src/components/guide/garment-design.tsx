@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { garmentDesignCourses, digitalDesignCourses } from "@/lib/guide/content-data";
+import { CogCalculator } from "@/components/guide/cog-calculator";
 
 type Module = {
   num: string;
@@ -13,6 +14,7 @@ type Module = {
   body: string[];
   practical?: { title: string; description: string };
   resources?: { label: string; url: string }[];
+  calculator?: boolean;
 };
 
 const modules: Module[] = [
@@ -58,7 +60,7 @@ const modules: Module[] = [
     },
     resources: [
       { label: "Pinterest: croquis templates", url: "https://www.pinterest.com/search/pins/?q=fashion%20croquis%20template" },
-      { label: "Zoe Hong en YouTube", url: "https://www.youtube.com/@zoehong" },
+      { label: "Zoe Hong en YouTube", url: "https://www.youtube.com/zoehongteaches" },
     ],
   },
   {
@@ -173,7 +175,7 @@ const modules: Module[] = [
       { label: "CLO 3D (trial 30 días + estudiante gratis)", url: "https://www.clo3d.com" },
       { label: "Blender (100% gratis, nativo Mac M4)", url: "https://www.blender.org" },
       { label: "Canal oficial CLO 3D en YouTube", url: "https://www.youtube.com/@CLO3D" },
-      { label: "Zoe Hong playlist CLO 3D", url: "https://www.youtube.com/playlist?search=CLO+3D+zoehong" },
+      { label: "Zoe Hong playlist Tech Pack", url: "https://www.youtube.com/playlist?list=PLenrM9mHOMGyIaXP7WxZJXJArpwxE18wj" },
       { label: "Tutoriales Blender cloth en YouTube", url: "https://www.youtube.com/results?search_query=blender+cloth+simulation+fashion" },
       { label: "Coursera: 3D Fashion Design with CLO (audit gratis)", url: "https://www.coursera.org/learn/3d-fashion-design" },
     ],
@@ -269,6 +271,7 @@ const modules: Module[] = [
       description:
         "Para cada prenda, suma: coste del blank o producción, coste de impresión o bordado, coste de etiquetas y tags, coste de packaging (bolsa + hangtag), coste de envío desde el fabricante a ti. Multiplica el total por 2.5 a 3 para obtener el precio de venta al público. Si el precio de venta te parece caro, tu COG es demasiado alto. Reduce costes o sube el valor percibido.",
     },
+    calculator: true,
   },
   {
     num: "M12",
@@ -408,6 +411,9 @@ export function GarmentDesign() {
                     </p>
                   </div>
                 )}
+
+                {/* Embedded calculator (M11) */}
+                {mod.calculator && <CogCalculator />}
 
                 {/* Resources */}
                 {mod.resources && mod.resources.length > 0 && (

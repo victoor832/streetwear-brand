@@ -180,13 +180,13 @@ export const phases: Phase[] = [
         hint:
           "Su playlist 'Fashion Illustration for Beginners' es la mejor en inglés. Toma apuntes del proceso: cómo dibuja la figura, cómo coloca la prenda encima.",
         days: 3,
-        link: { label: "Zoe Hong en YouTube", url: "https://www.youtube.com/@zoehong" },
+        link: { label: "Zoe Hong en YouTube", url: "https://www.youtube.com/zoehongteaches" },
       },
       {
         id: "2-3",
         label: "Descargar 3 plantillas de croquis (figura humana) gratis",
         hint:
-          "Busca 'fashion croquis template free' en Pinterest. Elige 3 estilos diferentes. Imprímelas en A4. Te servirán de base para bocetar tus prendas sin tener que dibujar la figura desde cero.",
+          "Descarga plantillas gratuitas de croquis (figura humana) usando el enlace directo. Elige 3 estilos diferentes. Imprímelas en A4. Te servirán de base para bocetar tus prendas sin tener que dibujar la figura desde cero.",
         days: 1,
         link: { label: "Pinterest: croquis templates", url: "https://www.pinterest.com/search/pins/?q=fashion%20croquis%20template" },
       },
